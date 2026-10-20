@@ -22,6 +22,16 @@ input/
 output/
 projects/
 user/
+# Also ignore Linux data-directory symlinks, which are files to Git.
+/models
+/cache
+/temp
+/logs
+/downloads
+/input
+/output
+/projects
+/user
 runtime/*
 !runtime/ComfyUI/
 runtime/ComfyUI/*

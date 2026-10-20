@@ -19,3 +19,15 @@
 8GB 显存设备每次只执行一个生成任务。模型文件体积、CPU 内存和 Windows 提交额度也会影响任务能否运行；将缓存放在项目盘不能消除系统分页需求。当前公开副本没有启动模型或重新进行生成验收，具体边界见 [验证记录](docs/VALIDATION.md)。
 
 第三方软件和模型分别遵守其原有条款，见 [来源与许可](docs/UPSTREAM.md)。仓库没有新增覆盖整个项目的开源许可证；已有许可文件仅适用于其明确覆盖的内容。
+
+固定权重清单共 94 个目标文件、62,573,344,256 字节（约 62.57 GB，未做重复文件复用）。下载器按功能选择，默认只显示计划，不下载；必须显式给出已有数据盘目录：
+
+```bash
+python3 scripts/download-models.py --list
+python3 scripts/download-models.py --group wan --data-dir /data/media-studio
+python3 scripts/download-models.py --group wan --data-dir /data/media-studio --download
+```
+
+已有文件完整校验后跳过，部分下载保留断点，写入前检查剩余磁盘空间。Linux 数据目录链接、依赖与 SSH 接入步骤见[腾讯云 Linux 说明](docs/TENCENT-CLOUD-LINUX.md)。脚本不创建云资源，也没有在本次整理中下载模型或执行云端推理。
+
+腾讯云 Linux 与按需模型下载入口见 [云端接续说明](docs/TENCENT-CLOUD-LINUX.md).
