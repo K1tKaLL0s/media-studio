@@ -1,0 +1,4 @@
+interface:
+  display_name: "图片模型提示"
+  short_description: "把构图和编辑意图转换为目标图片模型提示，隔离版本参数与参考能力"
+  default_prompt: "请使用 $media-image-prompts 完成本次对应的创作任务，并给出可审阅产物。"

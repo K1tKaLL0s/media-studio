@@ -1,0 +1,24 @@
+{
+  "1": {
+    "class_type": "MediaStudioMusic",
+    "inputs": {
+      "caption": "A quiet acoustic piano instrumental, gentle and unhurried",
+      "lyrics": "[Instrumental]",
+      "instrumental": true,
+      "vocal_language": "unknown",
+      "duration_seconds": 30,
+      "bpm": 0,
+      "keyscale": "",
+      "timesignature": "",
+      "thinking": true,
+      "seed": 42,
+      "timeout_seconds": 1800
+    },
+    "_meta": {"title": "ACE-Step 1.5 Music (static integration; not run)"}
+  },
+  "2": {
+    "class_type": "SaveAudio",
+    "inputs": {"audio": ["1", 0], "filename_prefix": "music/ACE-Step-1.5"},
+    "_meta": {"title": "Save music"}
+  }
+}

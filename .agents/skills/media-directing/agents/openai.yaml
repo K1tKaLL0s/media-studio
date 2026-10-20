@@ -1,0 +1,4 @@
+interface:
+  display_name: "导演与制作"
+  short_description: "设计场面调度、摄影和剪辑意图，检查连续性并定位最小镜头返工"
+  default_prompt: "请使用 $media-directing 完成本次对应的创作任务，并给出可审阅产物。"

@@ -1,0 +1,271 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux-2-klein-4b-fp8.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "Diffusion model"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen_3_4b.safetensors",
+      "type": "flux2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Managed text encoder"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    },
+    "_meta": {
+      "title": "VAE"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "Change the teapot color to red. Preserve the teapot shape, wooden table, lighting, background and camera position."
+    },
+    "_meta": {
+      "title": "Image edit instruction"
+    }
+  },
+  "5": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "4",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Distilled negative placeholder"
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "REPLACE_WITH_UPLOADED_IMAGE.png"
+    },
+    "_meta": {
+      "title": "Uploaded reference image"
+    }
+  },
+  "7": {
+    "class_type": "ImageScaleToTotalPixels",
+    "inputs": {
+      "image": [
+        "6",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "megapixels": 0.25,
+      "resolution_steps": 16
+    },
+    "_meta": {
+      "title": "Reference size budget"
+    }
+  },
+  "8": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "7",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Encode reference image"
+    }
+  },
+  "9": {
+    "class_type": "ReferenceLatent",
+    "inputs": {
+      "conditioning": [
+        "4",
+        0
+      ],
+      "latent": [
+        "8",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Positive reference conditioning"
+    }
+  },
+  "10": {
+    "class_type": "ReferenceLatent",
+    "inputs": {
+      "conditioning": [
+        "5",
+        0
+      ],
+      "latent": [
+        "8",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Negative reference conditioning"
+    }
+  },
+  "11": {
+    "class_type": "GetImageSize",
+    "inputs": {
+      "image": [
+        "7",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Reference dimensions"
+    }
+  },
+  "12": {
+    "class_type": "EmptyFlux2LatentImage",
+    "inputs": {
+      "width": [
+        "11",
+        0
+      ],
+      "height": [
+        "11",
+        1
+      ],
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "Output matches reference dimensions"
+    }
+  },
+  "13": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 42
+    },
+    "_meta": {
+      "title": "Seed"
+    }
+  },
+  "14": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "_meta": {
+      "title": "Euler sampler"
+    }
+  },
+  "15": {
+    "class_type": "Flux2Scheduler",
+    "inputs": {
+      "steps": 4,
+      "width": [
+        "11",
+        0
+      ],
+      "height": [
+        "11",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "FLUX.2 distilled schedule"
+    }
+  },
+  "16": {
+    "class_type": "CFGGuider",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "positive": [
+        "9",
+        0
+      ],
+      "negative": [
+        "10",
+        0
+      ],
+      "cfg": 1.0
+    },
+    "_meta": {
+      "title": "Distilled reference CFG"
+    }
+  },
+  "17": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "13",
+        0
+      ],
+      "guider": [
+        "16",
+        0
+      ],
+      "sampler": [
+        "14",
+        0
+      ],
+      "sigmas": [
+        "15",
+        0
+      ],
+      "latent_image": [
+        "12",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Sample edit"
+    }
+  },
+  "18": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "17",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Decode edit"
+    }
+  },
+  "19": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "18",
+        0
+      ],
+      "filename_prefix": "image/edit"
+    },
+    "_meta": {
+      "title": "Edited image output"
+    }
+  }
+}

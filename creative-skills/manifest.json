@@ -1,0 +1,248 @@
+{
+  "format": 1,
+  "package": "professional-media-skills",
+  "version": "1.0.0",
+  "checked_at": "2026-10-20",
+  "skills": [
+    {
+      "name": "media-directing",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "12758b875335d23c7946cb1433c54cdbcd9497a4bccb07aa9932c9d73da1ca29",
+          "bytes": 271
+        },
+        {
+          "path": "references/directing.md",
+          "sha256": "3b462ac68c981e0a65fe5c1a0c5c17832e2b3c0762e8d75cc04c3bf496eb750d",
+          "bytes": 3180
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "26e70eae23ee067c9ca74dd7afb6e4d87313a4074eb89c2deaff15d4c417f6f4",
+          "bytes": 5662
+        }
+      ]
+    },
+    {
+      "name": "media-director",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "ab5a4703d7305d5627576283f00439463dbc49880e375d6ee65a9e24e4585699",
+          "bytes": 273
+        },
+        {
+          "path": "references/local-capabilities.md",
+          "sha256": "98f12abb6ce79e1abd3a45abc2dd80b5d52a47634c927df85f20225c38e2d9aa",
+          "bytes": 2359
+        },
+        {
+          "path": "references/project-contract.md",
+          "sha256": "d070d5fbbac91ffa9d398321fa1973ea5d7e39fb4da9ec75f146aee14d6064df",
+          "bytes": 1811
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "19dec036b56b3c2dc0472b643109d5f45460b0e4c25def63accc8bf9a157e800",
+          "bytes": 4880
+        }
+      ]
+    },
+    {
+      "name": "media-image-prompts",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "391e9d9adef4d0ed7a5e3d2f20b19a38c1628c188edc3492f9019519d3d1e5d9",
+          "bytes": 284
+        },
+        {
+          "path": "references/model-profiles.md",
+          "sha256": "b7efa1fe53bd4a2f394aeda134573a5373f1987e9095f3e382706ae071297670",
+          "bytes": 8241
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "4bf4cd71dd65bd84d128144b98a065ad03ce8b151ccde43da35096547aaa3708",
+          "bytes": 6384
+        }
+      ]
+    },
+    {
+      "name": "media-look-anime",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "c497d050a6c35f6cb81a07025306a8c2db665fb7aa0428e3dee7f01f773b7311",
+          "bytes": 284
+        },
+        {
+          "path": "references/look-cards.md",
+          "sha256": "255165dc73306e7b3db1418109022fc965f3ab7bd6fe6d4e3415d690894eec9d",
+          "bytes": 1309
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "3baf4f590754b988dcda76af537f38b595d057be16583f5efe7f4ea82d481afd",
+          "bytes": 2569
+        }
+      ]
+    },
+    {
+      "name": "media-look-realism",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "6797e3c22eec9fe705bda2f4cca4a16cbcee8c83ef0d6357d112d418b4d7b562",
+          "bytes": 283
+        },
+        {
+          "path": "references/craft.md",
+          "sha256": "24dd0cd120edcc91b42fa93be259e0d9dffff8539e4dee82d2e2b956965eb707",
+          "bytes": 1153
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "0c4749f440ef9987a9abf5d9af347e157f84baa28ab1dd1770454e6f57aa8b58",
+          "bytes": 2764
+        }
+      ]
+    },
+    {
+      "name": "media-look-web",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "2eb02355aa07751365a6ff9307cfce05112d5d7780ad49fb73fda43bb198198c",
+          "bytes": 282
+        },
+        {
+          "path": "references/review.md",
+          "sha256": "c4fb6509bbe6f613e1d90f481a6d1f8dd61bdfa676c8bcd13a4eec815fbec7e8",
+          "bytes": 1485
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "c8c9657aaa58e1ef80e8fed3fd9b76fd02317398cdd391366865678252cb5d64",
+          "bytes": 2778
+        }
+      ]
+    },
+    {
+      "name": "media-music",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "185846c752277ec91403d77b1f79329a75a23f942e97ae6325297aa46b05549a",
+          "bytes": 282
+        },
+        {
+          "path": "references/brief-composition.md",
+          "sha256": "73bbf8f88fd55d994ff4bafa461611add32c9b27c9d46be8703fcc4a7e216858",
+          "bytes": 4233
+        },
+        {
+          "path": "references/generation-edit.md",
+          "sha256": "8a90132c4540ae24c8547399e1f83cca90a5be8b016c162f248f1f7447320069",
+          "bytes": 5001
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "054f50421d88b7532079e98c66e3e46861c4bd072067913deca1b22a8d4bbcd1",
+          "bytes": 7055
+        }
+      ]
+    },
+    {
+      "name": "media-story",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "66e7b3748520dd11ac279c81198548d4ab0642a84c77c12b621f2aafb55ee336",
+          "bytes": 270
+        },
+        {
+          "path": "references/story-craft.md",
+          "sha256": "c3b9b81a936b448c2d27eaa341f0e434f17b48c7313b2a6f13fc99a275a171bb",
+          "bytes": 2906
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "79eee07faa469389429d3acbe19e97765e3af6c4533590d1911ec9b8e4de92b7",
+          "bytes": 5386
+        }
+      ]
+    },
+    {
+      "name": "media-storyboard",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "20d8d0786874de60ccc4668ea813bee43768f098fd19464a1ce9cb17afddc03e",
+          "bytes": 272
+        },
+        {
+          "path": "references/boards.md",
+          "sha256": "0159fba58f1bbcb6f287b3b42e803c8a5f0b7492ec77dd8e720802e819656da0",
+          "bytes": 3091
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "334da253ff3163b3834def3e0bc4631fcb59ee02cb2113dc3c765894d097a87a",
+          "bytes": 5504
+        }
+      ]
+    },
+    {
+      "name": "media-video-prompts",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "ff304a6d52477ea9ad3c3da41b8c61e16695d0fb753cd19d56e5c8f324a7bcf0",
+          "bytes": 287
+        },
+        {
+          "path": "references/model-profiles.md",
+          "sha256": "70ca9ba64b910957ce5d00f36240842fb6370903615de8bee8b52b907ed4e0e7",
+          "bytes": 9945
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "25f1a9eef96764ff5698ab228640ba7fe9d2b86a2dc90b761a24de1814014610",
+          "bytes": 6793
+        }
+      ]
+    },
+    {
+      "name": "media-voice",
+      "files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "195dd29a3d6d9e831c2931ec95575631f854d2ed5c4e632e725088bb67d02f3a",
+          "bytes": 279
+        },
+        {
+          "path": "references/audio-qa-edit.md",
+          "sha256": "b381b2238abf482f1697e1689b7748b07149338e005a6d6fa1e736b74288db55",
+          "bytes": 3094
+        },
+        {
+          "path": "references/voice-direction.md",
+          "sha256": "18edaa2d0e687906a78606e0c2019c4cfd37789254788e45d5c58d655a17fc40",
+          "bytes": 4331
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "efb42de9226278dd70d1b8c2fc8a5750cf48fbee66cf428d1627041bedc654cd",
+          "bytes": 6702
+        }
+      ]
+    }
+  ],
+  "external_dependencies": [
+    "media-studio (bundled separately; no new license added)",
+    "frontend-design (optional installed skill for webpage implementation)"
+  ],
+  "publication_note": "Hashes describe sanitized publication copies of the eleven creative skills only; media-studio and the author MV skill are excluded. Original license scope is unchanged."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "媒体创作总控"
+  short_description: "将零散创意组织为故事、分镜和多媒体作品，按阶段调用专业技能"
+  default_prompt: "请使用 $media-director 完成本次对应的创作任务，并给出可审阅产物。"

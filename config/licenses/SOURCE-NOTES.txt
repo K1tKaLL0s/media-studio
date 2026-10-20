@@ -1,0 +1,14 @@
+Media Studio model license source inventory
+
+This source snapshot includes license texts only. manifest.json keeps the original
+fixed public source URLs, expected source hashes and an included_in_public_snapshot
+flag. Upstream README files, NVIDIA license PDF and model weights are not bundled;
+consult the linked public sources for their notices and terms.
+
+Anima uses the CircleStone Labs Non-Commercial License. Its upstream NVIDIA Cosmos
+terms also apply as specified by that model publisher. Model licensing and rights
+in generated outputs differ. The exact publisher terms control.
+
+Comfy-Org repack metadata and upstream model licensing are separate; a repack
+README is not an invented standalone license. No gated access was accepted.
+This inventory is a source note, not an alternative license.

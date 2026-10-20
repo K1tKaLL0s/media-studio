@@ -1,0 +1,13 @@
+{
+  "repository": "index-tts/index-tts",
+  "revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+  "url": "https://codeload.github.com/index-tts/index-tts/zip/d9e41aac89fd00b3d71497fddb287b7f24613712",
+  "path": ".\\runtime\\IndexTTS-2.5",
+  "archive_bytes": 36000264,
+  "archive_local_sha256": "86c3bb36566d706017bf99c6f19d45a4092b21ebff9fcac51fe198a42fedd0a4",
+  "integrity": "all extracted files matched fixed official Git tree SHA1; zip CRC passed",
+  "verified_files": 339,
+  "missing_git_files": [],
+  "timestamp": "2026-10-20T08:53:39.069803+00:00",
+  "runtime_validation": "not_run"
+}

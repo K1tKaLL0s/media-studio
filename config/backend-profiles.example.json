@@ -1,0 +1,35 @@
+{
+  "description": "Examples only. Select backend_url explicitly in gateway.json. Do not expose Comfy or gateway on 0.0.0.0. No automatic connection, credentials or cloud upload.",
+  "profiles": [
+    {
+      "name": "local",
+      "backend_url": "http://127.0.0.1:8188",
+      "transport": "local loopback",
+      "verified": true
+    },
+    {
+      "name": "ssh-forward-example",
+      "backend_url": "http://127.0.0.1:18188",
+      "transport": "user-managed SSH: ssh -N -L 127.0.0.1:18188:127.0.0.1:8188 user@GPU_HOST",
+      "verified": false
+    }
+  ],
+  "remote_gateway_example": {
+    "description": "Run gateway and assets on remote GPU host; forward client18190 to remote8190 and client18188 to remote8188. Explicit server-side gateway.json additions only; not enabled by this example.",
+    "additional_hosts": [
+      "127.0.0.1:18190",
+      "localhost:18190"
+    ],
+    "additional_loopback_origins": [
+      "http://127.0.0.1:18190",
+      "http://localhost:18190"
+    ],
+    "native_client_url": "http://127.0.0.1:18188"
+  },
+  "requirements": [
+    "The backend needs the same fixed workflows, models and Media Studio nodes.",
+    "Current input/output and prepared MV projects are local to this root; an SSH tunnel alone does not synchronize assets or outputs. Remote media transfer is not implemented.",
+    "Resource measurements describe this gateway host. A forwarded remote PID cannot be verified locally; its process metrics remain unknown/advisory.",
+    "Existing Codex/DSH MCP launch profiles are independent and unchanged."
+  ]
+}

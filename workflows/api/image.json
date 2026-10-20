@@ -1,0 +1,175 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "flux-2-klein-4b-fp8.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "Diffusion model"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen_3_4b.safetensors",
+      "type": "flux2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Managed text encoder"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    },
+    "_meta": {
+      "title": "VAE"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "A small cobalt-blue ceramic teapot on a wooden table beside a window, warm morning light, soft natural shadows, a quiet still-life photograph, simple uncluttered background."
+    },
+    "_meta": {
+      "title": "Image prompt"
+    }
+  },
+  "5": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "4",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Distilled negative placeholder"
+    }
+  },
+  "6": {
+    "class_type": "EmptyFlux2LatentImage",
+    "inputs": {
+      "width": 512,
+      "height": 512,
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "Output size"
+    }
+  },
+  "7": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 42
+    },
+    "_meta": {
+      "title": "Seed"
+    }
+  },
+  "8": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "_meta": {
+      "title": "Euler sampler"
+    }
+  },
+  "9": {
+    "class_type": "Flux2Scheduler",
+    "inputs": {
+      "steps": 4,
+      "width": 512,
+      "height": 512
+    },
+    "_meta": {
+      "title": "FLUX.2 distilled schedule"
+    }
+  },
+  "10": {
+    "class_type": "CFGGuider",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "5",
+        0
+      ],
+      "cfg": 1.0
+    },
+    "_meta": {
+      "title": "Distilled CFG"
+    }
+  },
+  "11": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "7",
+        0
+      ],
+      "guider": [
+        "10",
+        0
+      ],
+      "sampler": [
+        "8",
+        0
+      ],
+      "sigmas": [
+        "9",
+        0
+      ],
+      "latent_image": [
+        "6",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Sample image"
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Decode image"
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "image/general"
+    },
+    "_meta": {
+      "title": "Image output"
+    }
+  }
+}

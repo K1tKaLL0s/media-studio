@@ -1,0 +1,11 @@
+{
+  "1": {
+    "class_type": "MediaStudioMV",
+    "inputs": {
+      "project_name": "pv-demo",
+      "quality": "preview",
+      "filename_prefix": "demo",
+      "timeout_seconds": 3600
+    }
+  }
+}

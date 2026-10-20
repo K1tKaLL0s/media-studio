@@ -1,0 +1,9 @@
+{
+  "host": "127.0.0.1",
+  "port": 8190,
+  "backend_url": "http://127.0.0.1:8188",
+  "native_client_url": "http://127.0.0.1:8188",
+  "additional_hosts": [],
+  "additional_loopback_origins": [],
+  "allowed_origins": []
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "网页视觉评议"
+  short_description: "评议网页信息层级、字体、色彩和状态可读性，保留既有设计与实现边界"
+  default_prompt: "请使用 $media-look-web 完成本次对应的创作任务，并给出可审阅产物。"

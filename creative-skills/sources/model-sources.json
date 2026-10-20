@@ -1,0 +1,762 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-20",
+  "timezone": "Asia/Hong_Kong",
+  "purpose": "Model-specific image/video prompting for professional Skills; read-only research, no generation or cloud integration.",
+  "boundaries": {
+    "model_downloads": false,
+    "gpu_tests": false,
+    "cloud_calls": false,
+    "cloud_uploads": false,
+    "cloud_credentials_configured": false,
+    "n_runtime_modified": false,
+    "existing_download_process_touched": false,
+    "commercial_execution": "Requires specific provider/model, materials and spend authorization before submission; prior explicit authorization persists.",
+    "no_claims": [
+      "full original video playback",
+      "original video audio audition",
+      "prompt output quality tested",
+      "all legal frame counts fit the local 8GB GPU",
+      "cloud model availability proved by an open guide"
+    ],
+    "unshipped_research_note": "Original local research artifacts and working files are not distributed. The observations and limitations describe historical research only."
+  },
+  "original_videos": [
+    {
+      "bvid": "BV1y7aJ65ETc",
+      "url": "https://www.bilibili.com/video/BV1y7aJ65ETc/",
+      "title": "【已开源】opus5.5大人调用blender 一键出术力口PV有点太拟人了-アビスライト",
+      "author": "NikusonP",
+      "duration_seconds": 173,
+      "cid": 42304078225,
+      "metadata_url": "https://api.bilibili.com/x/web-interface/view?bvid=BV1y7aJ65ETc",
+      "storyboard_url": "https://api.bilibili.com/x/player/videoshot?bvid=BV1y7aJ65ETc&index=1",
+      "api_code": 0,
+      "storyboard_api_code": 0,
+      "actual_viewed": "Reinspected all 34 populated cells of the pre-existing 4800x2700 storyboard JPEG; no continuous playback, audio or full subtitle transcript.",
+      "grid": {
+        "columns": 10,
+        "rows": 10,
+        "cell_width": 480,
+        "cell_height": 270,
+        "populated_cells": 34
+      },
+      "raw_index_seconds": [
+        0,
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        51,
+        56,
+        61,
+        66,
+        71,
+        77,
+        82,
+        87,
+        93,
+        98,
+        103,
+        109,
+        115,
+        120,
+        125,
+        130,
+        135,
+        140,
+        145,
+        150,
+        155,
+        160,
+        165,
+        170
+      ],
+      "mapping_limit": "Current index after leading duplicate zero has 34 entries, matching visible cell count. Remote sprite bytes were not re-downloaded or hash-matched; timestamps are approximate correspondence only.",
+      "visible_observations": [
+        "dark perspective space with cyan grids and paths",
+        "repeated character silhouette",
+        "large Japanese lyric fragments",
+        "red heart motif",
+        "later pale backgrounds and warm cloud scenes"
+      ],
+      "publisher_description_source": "Official Bilibili metadata links the author's repository; implementation claims are separate from visual observation.",
+      "repository": "https://github.com/EGSECDA/vocaloid-style-mv-pipeline",
+      "unshipped_research_note": "Original local research artifacts and working files are not distributed. The observations and limitations describe historical research only."
+    },
+    {
+      "bvid": "BV186pc65E68",
+      "url": "https://www.bilibili.com/video/BV186pc65E68/",
+      "title": "【4K60】用10亿token 13017帧 画出Claude眼中的世界 | world.execute(me);",
+      "author": "真寻Mahiro",
+      "duration_seconds": 217,
+      "cid": 42515501048,
+      "metadata_url": "https://api.bilibili.com/x/web-interface/view?bvid=BV186pc65E68",
+      "storyboard_url": "https://api.bilibili.com/x/player/videoshot?bvid=BV186pc65E68&index=1",
+      "api_code": 0,
+      "storyboard_api_code": 0,
+      "actual_viewed": "Reinspected all 28 populated cells of the pre-existing storyboard JPEG; no continuous playback, audio or full subtitle transcript.",
+      "grid": {
+        "columns": 10,
+        "rows": 10,
+        "cell_width": 480,
+        "cell_height": 270,
+        "populated_cells": 28
+      },
+      "raw_index_seconds": [
+        0,
+        0,
+        8,
+        16,
+        25,
+        33,
+        41,
+        50,
+        58,
+        66,
+        75,
+        82,
+        91,
+        100,
+        108,
+        116,
+        122,
+        129,
+        138,
+        146,
+        153,
+        161,
+        167,
+        175,
+        182,
+        189,
+        196,
+        201,
+        209
+      ],
+      "mapping_limit": "Current index after leading duplicate zero has 28 entries, matching visible cell count. No remote byte/hash rematch; not frame-accurate timing evidence.",
+      "visible_observations": [
+        "dark chat interface",
+        "orange/red and ivory hierarchy",
+        "character silhouettes and large type",
+        "chat/code/terminal visual states",
+        "high contrast execution sequence"
+      ],
+      "publisher_claims_not_independently_verified": [
+        "13017 frames",
+        "4K60",
+        "Canvas2D plus WebGL postprocessing and headless-browser/ffmpeg rendering",
+        "token counts, cost, code line and review-frame counts"
+      ],
+      "repository": "https://github.com/Nyankomintsu/world-execute-me-lyric-mv",
+      "repository_scope_read": "README including public prompt pointers and production description, not the complete approximately 23000-character V4 prompt.",
+      "warning": "Storyboard alone cannot establish motion timing, beat synchronization or sound quality.",
+      "unshipped_research_note": "Original local research artifacts and working files are not distributed. The observations and limitations describe historical research only."
+    }
+  ],
+  "local_profiles": [
+    {
+      "id": "anima-turbo-1.1",
+      "checkpoint": "anima-turbo-v1.1.safetensors",
+      "repository": "circlestone-labs/Anima",
+      "revision": "f973fc41ec7545364ac9776c2440285f43ff2a30",
+      "mode": "T2I only in current anime.json",
+      "prompt_style": "Lowercase space-separated tags can mix with descriptive natural language.",
+      "current_parameters": {
+        "steps": 10,
+        "cfg": 1,
+        "width": 512,
+        "height": 512
+      },
+      "official_turbo_range": {
+        "steps_min": 8,
+        "steps_max": 12,
+        "cfg": 1
+      },
+      "negative": "The current Comfy CFG1 path normally skips unconditional conditioning; a negative node is not proof of active negative control.",
+      "limitations": [
+        "Do not substitute Base/Aesthetic parameters or add the old Turbo LoRA.",
+        "No current reference input in anime.json.",
+        "Illustration-oriented, not a photorealism or long-text specialist."
+      ],
+      "source_ids": [
+        "anima-card",
+        "comfy-anima",
+        "comfy-cfg1"
+      ],
+      "unshipped_research_note": "Original local research artifacts and working files are not distributed. The observations and limitations describe historical research only."
+    },
+    {
+      "id": "flux2-klein-4b-distilled-fp8",
+      "checkpoint": "flux-2-klein-4b-fp8.safetensors",
+      "repository": "black-forest-labs/FLUX.2-klein-4b-fp8",
+      "revision": "5b4408e59397a4a37ccb46afe426d8ed86379441",
+      "modes": [
+        "T2I",
+        "single-reference editing in current graph"
+      ],
+      "prompt_style": "Coherent prose; describe target change and required preservation for edits; no automatic prompt upsampling for Klein.",
+      "current_parameters": {
+        "steps": 4,
+        "cfg": 1,
+        "scheduler": "Flux2Scheduler"
+      },
+      "negative": "No useful user negative channel in this distilled CFG1 graph; do not forward SD or MJ syntax.",
+      "references": {
+        "local_current": 1,
+        "cloud_family": "Specific cloud Klein documentation lists up to 4; not implemented by the local single-reference graph."
+      },
+      "source_ids": [
+        "bfl-4b-card",
+        "bfl-fp8-card",
+        "bfl-reference",
+        "bfl-overview",
+        "comfy-flux"
+      ],
+      "unshipped_research_note": "Original local research artifacts and working files are not distributed. The observations and limitations describe historical research only."
+    },
+    {
+      "id": "wan22-ti2v-5b",
+      "checkpoint": "wan2.2_ti2v_5B_fp16.safetensors",
+      "repository": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+      "revision": "ee6f4a40737a995bf5818954cfce6d59443b0f04",
+      "modes": [
+        "T2V",
+        "I2V with single start image"
+      ],
+      "audio_in_current_graph": false,
+      "current_parameters": {
+        "width": 1280,
+        "height": 704,
+        "i2v_width": 704,
+        "i2v_height": 1280,
+        "frames": 17,
+        "fps": 24,
+        "steps": 20,
+        "cfg": 5,
+        "shift": 8
+      },
+      "runtime_readback": {
+        "checked_on": "2026-10-20",
+        "method": "Read-only JSON field inspection, no server or GPU execution.",
+        "quality_workflows": [
+          {
+            "width": 1280,
+            "height": 704,
+            "frames": 49,
+            "steps": 20,
+            "fps": 24,
+            "cfg": 5,
+            "shift": 8,
+            "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+          },
+          {
+            "width": 704,
+            "height": 1280,
+            "frames": 49,
+            "steps": 20,
+            "fps": 24,
+            "cfg": 5,
+            "shift": 8,
+            "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+          }
+        ],
+        "parent_reported_technical_success": {
+          "duration_seconds": 2.0417,
+          "approx_t2v_elapsed_seconds": 3391,
+          "approx_i2v_elapsed_seconds": 4198
+        },
+        "quality_limits": "Parent-reported technical success is not proof of complete blinking, all requested actions or full quality; this agent did not replay GPU tasks or view those output videos.",
+        "old_staging_limit": "E staging 512x288 was superseded; current execution reference reports severe color stripes at that size, so do not use it as a generic memory-saving default.",
+        "reference_state": "At read time the execution reference described official dimensions and 17-frame previews but had not yet incorporated the parent's 49-frame results. Existing execution skill was not edited.",
+        "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+      },
+      "upstream_config": {
+        "steps": 50,
+        "guide_scale": 5,
+        "shift": 5,
+        "frames": 121,
+        "fps": 24
+      },
+      "negative": "Supported positive/unconditional branches; upstream n_prompt is documented.",
+      "frame_constraint": "4n+1",
+      "timing": {
+        "current_seconds": 0.7083333333333334,
+        "quality_49_seconds": 2.0416666666666665,
+        "five_second_nearby_legal_frames": 121,
+        "five_second_nearby_seconds": 5.041666666666667,
+        "exact_5_seconds": "Post-trim one output frame at 24fps; not evidence that 121-frame generation fits local memory."
+      },
+      "limits": [
+        "No end frame/multi-reference/audio input in current graph.",
+        "S2V-14B is a separate model.",
+        "Official 8GB offload statement is not a local benchmark."
+      ],
+      "source_ids": [
+        "comfy-wan",
+        "wan-repo",
+        "wan-function",
+        "wan-config"
+      ],
+      "unshipped_research_note": "Original local research artifacts and working files are not distributed. The observations and limitations describe historical research only."
+    }
+  ],
+  "cloud_profiles": [
+    {
+      "id": "openai-images",
+      "provider": "OpenAI",
+      "scope": "Images API",
+      "verified_model_ids": [
+        "gpt-image-2.5-flare",
+        "gpt-image-2.5-sunburst"
+      ],
+      "status": "Documented current models; no account integration or paid execution performed.",
+      "prompt": "Natural-language generation/edit direction; identify reference roles and changes/preservation.",
+      "fields_confirmed": [
+        "model",
+        "prompt",
+        "size",
+        "quality",
+        "output_format",
+        "background"
+      ],
+      "not_exposed_in_examined_image_generation_schema": [
+        "negative_prompt",
+        "cfg",
+        "sampler",
+        "steps"
+      ],
+      "source_ids": [
+        "openai-image-guide",
+        "openai-image-api",
+        "openai-image-generation"
+      ]
+    },
+    {
+      "id": "midjourney-ui",
+      "provider": "Midjourney",
+      "scope": "Website/Discord, not a claimed official HTTP API",
+      "verified_versions": [
+        "V8.2 current default",
+        "Niji7"
+      ],
+      "negative": "--no is product parser syntax",
+      "references": "V8.X Edit Model; --oref/--ow belongs to V7, --cref/--cw to older V6 paths.",
+      "source_ids": [
+        "mj-version",
+        "mj-parameters",
+        "mj-omni",
+        "mj-edit"
+      ]
+    },
+    {
+      "id": "sora-history",
+      "provider": "OpenAI",
+      "scope": "Sora2 / Videos API",
+      "status": "Shut down 2026-09-24; historical prompting guidance only.",
+      "conflict": "Retained guide/cookbook show 16/20s and extension examples while reference schema lists 4/8/12s. Neither is treated as a current callable contract.",
+      "source_ids": [
+        "openai-deprecations",
+        "sora-reference",
+        "sora-cookbook",
+        "sora-old-guide"
+      ]
+    },
+    {
+      "id": "imagen4-history",
+      "provider": "Google",
+      "scope": "Exact Imagen4 generate-001 family",
+      "status": "Gemini API shut down 2026-08-17; examined Cloud model card separately lists 2026-06-30 discontinuation.",
+      "negative": "Not supported for Imagen3 generate-002 and later; do not transfer early Imagen3 capability fields.",
+      "references": "Examined Imagen4 card describes text inputs and marks customization/editing unsupported.",
+      "source_ids": [
+        "imagen-status",
+        "google-deprecations",
+        "imagen-cloud-card",
+        "imagen-negative"
+      ]
+    },
+    {
+      "id": "veo31-service-specific",
+      "provider": "Google",
+      "scope": "Cloud veo-3.1-generate-001 versus Gemini veo-3.1-*-preview",
+      "status": "Gemini preview scheduled shutdown 2026-10-22; Cloud documentation lists a distinct 001 route.",
+      "negative": "Cloud text-generation tutorial documents negativePrompt; this is not Comfy CFG.",
+      "audio": "Veo3.1 guide documents native audio. Exact switches and reference/time combinations depend on service/model.",
+      "request_shape": "Cloud predictLongRunning instances[].prompt with parameters such as sampleCount/aspectRatio/negativePrompt; not the same JSON as Runway or Gemini SDK.",
+      "source_ids": [
+        "google-deprecations",
+        "veo-gemini",
+        "veo-cloud-text",
+        "veo-cloud-frames"
+      ]
+    },
+    {
+      "id": "kling4-ui",
+      "provider": "Kling",
+      "scope": "Kling4.0 website guide dated 2026-10-14",
+      "status": "Current guide read; exact 4.0 API schema not confirmed.",
+      "duration_seconds": {
+        "min": 3,
+        "max": 30
+      },
+      "audio": "Guide documents sound/voice direction.",
+      "reference_syntax": "UI asset roles such as @Image1 after actual attachment. Omni Reference and Keyframes modes cannot be combined.",
+      "negative": "Guide favors concrete positive descriptions, with specific no-subtitles/no-background-music instructions where needed.",
+      "caveat": "Guide prose calls HDR coming soon but table lists HDR; do not promise HDR. Public indexed API pages still say Kling3.0.",
+      "source_ids": [
+        "kling4-guide",
+        "kling-api-current",
+        "kling-api-legacy"
+      ]
+    },
+    {
+      "id": "runway-gen45",
+      "provider": "Runway",
+      "scope": "Official OpenAPI gen4.5 discriminated branches",
+      "status": "Static public schema read, no credentials or generation.",
+      "api_version_header": "2024-11-06",
+      "endpoints": {
+        "image_to_video": {
+          "path": "/v1/image_to_video",
+          "required": [
+            "promptText",
+            "promptImage",
+            "ratio",
+            "duration",
+            "model"
+          ],
+          "references": "one first frame"
+        },
+        "text_to_video": {
+          "path": "/v1/text_to_video",
+          "required": [
+            "promptText",
+            "ratio",
+            "duration",
+            "model"
+          ]
+        }
+      },
+      "duration_seconds": {
+        "type": "integer",
+        "min": 2,
+        "max": 10
+      },
+      "not_exposed_in_examined_gen45_schema": [
+        "negativePrompt",
+        "cfg",
+        "guidance",
+        "audio"
+      ],
+      "caveat": "Quickstart suggests omitting promptImage from image_to_video for T2V, but schema requires it. Prefer the separate explicit T2V endpoint; no live validation was performed.",
+      "source_ids": [
+        "runway-openapi",
+        "runway-quickstart",
+        "runway-t2v",
+        "runway-i2v",
+        "runway-intro"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "anima-card",
+      "url": "https://huggingface.co/circlestone-labs/Anima",
+      "type": "official_model_card",
+      "read_scope": "Versions, generation settings, prompting, natural-language tips, limitations",
+      "supports": "Turbo-specific settings and tag/prose style; separate Base/Aesthetic text."
+    },
+    {
+      "id": "comfy-anima",
+      "url": "https://docs.comfy.org/tutorials/image/anima/anima",
+      "type": "official_tutorial",
+      "read_scope": "Native model/workflow explanation",
+      "supports": "Anima support; tutorial title remains Base, so it cannot override full Turbo settings."
+    },
+    {
+      "id": "comfy-cfg1",
+      "url": "https://github.com/Comfy-Org/ComfyUI/blob/63be2f9b82ad0dac88a7ceaa28a9cf3154125a18/comfy/samplers.py",
+      "type": "official_pinned_source",
+      "read_scope": "sampling_function CFG1 conditional around source lines 3174–3184 in rendered page",
+      "supports": "CFG1 optimization skips unconditional branch unless explicitly disabled."
+    },
+    {
+      "id": "bfl-4b-card",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4B",
+      "type": "official_model_card",
+      "read_scope": "Model and inference example",
+      "supports": "4 steps, guidance_scale1 with CPU offload example."
+    },
+    {
+      "id": "bfl-fp8-card",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4b-fp8",
+      "type": "official_model_card",
+      "read_scope": "FP8 identity and parent-model pointer",
+      "supports": "Official FP8 of the same 4B architecture."
+    },
+    {
+      "id": "bfl-reference",
+      "url": "https://docs.bfl.ai/guides/prompting_unified_reference",
+      "type": "official_prompt_guide",
+      "read_scope": "FLUX.2 and Klein sections",
+      "supports": "Klein prose, actual text received, lighting direction, reference distinction. FLUX3 fields are not applied to FLUX2."
+    },
+    {
+      "id": "bfl-overview",
+      "url": "https://docs.bfl.ai/flux_2/flux2_overview",
+      "type": "official_model_overview",
+      "read_scope": "Klein API versus Base and no-prompt-upsampling statement",
+      "supports": "Distilled versus Base variants and no Klein automatic upsampling."
+    },
+    {
+      "id": "bfl-pro-guide",
+      "url": "https://docs.bfl.ai/guides/prompting_guide_flux2",
+      "type": "official_prompt_guide",
+      "read_scope": "Title, no-negative statement, subject/action/style/context and positive alternatives",
+      "supports": "No negative prompting claim is labeled pro/max in page title; local Klein conclusion is independently grounded in its actual CFG1 graph."
+    },
+    {
+      "id": "comfy-flux",
+      "url": "https://docs.comfy.org/tutorials/flux/flux-2-klein",
+      "type": "official_tutorial",
+      "read_scope": "4B workflow examples",
+      "supports": "Native graph context; not a generic sampler replacement."
+    },
+    {
+      "id": "comfy-wan",
+      "url": "https://docs.comfy.org/tutorials/video/wan/wan2_2",
+      "type": "official_tutorial",
+      "read_scope": "TI2V5B native offload/model files/workflow",
+      "supports": "Official 8GB suitability statement and exact model scope."
+    },
+    {
+      "id": "wan-repo",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "type": "official_repository",
+      "read_scope": "TI2V5B, S2V and prompt extension sections",
+      "supports": "T2V/I2V scope and separation from audio-driven S2V; extension is optional and may use another service."
+    },
+    {
+      "id": "wan-function",
+      "url": "https://github.com/Wan-Video/Wan2.2/blob/main/wan/textimage2video.py",
+      "type": "official_source",
+      "read_scope": "WanTI2V generate/t2v parameter documentation",
+      "supports": "n_prompt, guidance and 4n+1 frame count."
+    },
+    {
+      "id": "wan-config",
+      "url": "https://github.com/Wan-Video/Wan2.2/blob/main/wan/configs/wan_ti2v_5B.py",
+      "type": "official_source",
+      "read_scope": "Inference config",
+      "supports": "24fps, shift5, 50 steps, CFG5, 121frames in upstream configuration."
+    },
+    {
+      "id": "openai-image-guide",
+      "url": "https://developers.openai.com/api/docs/guides/image-prompting",
+      "type": "official_prompt_guide",
+      "read_scope": "Choose model, parameters, edit-preservation examples",
+      "supports": "Exact current GPT Image2.5 IDs and model-specific controls."
+    },
+    {
+      "id": "openai-image-api",
+      "url": "https://developers.openai.com/api/reference/resources/images/methods/generate",
+      "type": "official_api_reference",
+      "read_scope": "Body parameters",
+      "supports": "Exact model names and image-generation request fields; no invented CFG/negative channel."
+    },
+    {
+      "id": "openai-image-generation",
+      "url": "https://developers.openai.com/api/docs/guides/image-generation",
+      "type": "official_api_guide",
+      "read_scope": "Images/Responses distinction and editing",
+      "supports": "Generate/edit route distinctions; not a claim that this platform connector is configured."
+    },
+    {
+      "id": "mj-version",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version",
+      "type": "official_product_documentation",
+      "read_scope": "Current default V8.2 and Niji7; compatibility",
+      "supports": "Do not default to old V7 or copy references between versions."
+    },
+    {
+      "id": "mj-parameters",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/32859204029709-Parameter-List",
+      "type": "official_product_documentation",
+      "read_scope": "Parameter placement and list",
+      "supports": "Product parser syntax, --no, --ar, --v, --edit."
+    },
+    {
+      "id": "mj-omni",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/36285124473997-Omni-Reference",
+      "type": "official_product_documentation",
+      "read_scope": "Version scope and Edit Model pointer",
+      "supports": "V7 --oref versus V8.X reference edit distinction."
+    },
+    {
+      "id": "mj-edit",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/33329329805581-Modifying-Your-Creations",
+      "type": "official_product_documentation",
+      "read_scope": "Edit Model section",
+      "supports": "Plain-language edits replace older character/Omni references in V8.X."
+    },
+    {
+      "id": "openai-deprecations",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "type": "official_lifecycle_notice",
+      "read_scope": "2026-03-24 Sora notice",
+      "supports": "Videos API and Sora2 shut down 2026-09-24; no replacement listed."
+    },
+    {
+      "id": "sora-reference",
+      "url": "https://developers.openai.com/api/reference/resources/videos/methods/create",
+      "type": "official_deprecated_api_reference",
+      "read_scope": "Shutdown banner and preserved body schema",
+      "supports": "No current callable Sora API; historical schema differs from retained guide."
+    },
+    {
+      "id": "sora-cookbook",
+      "url": "https://developers.openai.com/cookbook/examples/sora/sora2_prompting_guide",
+      "type": "official_historical_prompt_guide",
+      "read_scope": "Camera/actions/dialogue separation and iterative edits",
+      "supports": "Historical director-language method only, not current availability or current request schema."
+    },
+    {
+      "id": "sora-old-guide",
+      "url": "https://developers.openai.com/api/docs/guides/video-generation",
+      "type": "official_retained_guide",
+      "read_scope": "Model/duration/reference sections",
+      "supports": "Records obsolete longer-duration examples as a conflict, not an execution option."
+    },
+    {
+      "id": "imagen-status",
+      "url": "https://ai.google.dev/gemini-api/docs/imagen?hl=en",
+      "type": "official_lifecycle_page",
+      "read_scope": "Shutdown banner and migration distinction",
+      "supports": "Imagen is no longer available in Gemini API."
+    },
+    {
+      "id": "google-deprecations",
+      "url": "https://ai.google.dev/gemini-api/docs/deprecations?hl=en",
+      "type": "official_lifecycle_notice",
+      "read_scope": "Imagen4 and Veo3.1 preview rows",
+      "supports": "Service-specific shutdown dates; do not apply to all Google endpoints."
+    },
+    {
+      "id": "imagen-cloud-card",
+      "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-generate",
+      "type": "official_model_card",
+      "read_scope": "Inputs, unsupported capabilities, versions/discontinuation dates",
+      "supports": "Text-only generation and lack of negative/reference editing for examined Imagen4 variants."
+    },
+    {
+      "id": "imagen-negative",
+      "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/image/omit-content-using-a-negative-prompt?hl=en",
+      "type": "official_capability_documentation",
+      "read_scope": "Supported models and legacy warning",
+      "supports": "Negative not included from imagen-3.0-generate-002 onwards."
+    },
+    {
+      "id": "veo-gemini",
+      "url": "https://ai.google.dev/gemini-api/docs/veo?hl=en",
+      "type": "official_model_guide",
+      "read_scope": "Native audio and service-specific duration/reference examples",
+      "supports": "Veo3.1 family capabilities; all values tied to this route, with lifecycle checked separately."
+    },
+    {
+      "id": "veo-cloud-text",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/generate-videos-from-text",
+      "type": "official_api_tutorial",
+      "read_scope": "Supported 001 IDs, REST optional parameters and predictLongRunning example",
+      "supports": "Cloud route and negativePrompt; example request is a subset, not full formal schema."
+    },
+    {
+      "id": "veo-cloud-frames",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/generate-videos-from-first-and-last-frames",
+      "type": "official_api_tutorial",
+      "read_scope": "Model scope and first/last frame route",
+      "supports": "Cloud reference framing is a separate API capability."
+    },
+    {
+      "id": "kling4-guide",
+      "url": "https://kling.ai/quickstart/kling-4-model-user-guide",
+      "type": "official_product_tutorial",
+      "read_scope": "Sections1.1/1.2,2.1/2.2,3.1: capabilities, modes, positive direction, assets, event/audio structure",
+      "supports": "4.0 website capabilities and asset-role prompting; not an API-schema claim.",
+      "limitations": "No continuous embedded-video playback or audition; HDR prose/table conflict retained."
+    },
+    {
+      "id": "kling-api-current",
+      "url": "https://kling.ai/document-api/apiReference/model/textToVideo",
+      "type": "official_api_page",
+      "read_scope": "Search index extracts read; direct web extraction yielded only application shell",
+      "supports": "Public indexed page labels Kling3.0 and newer settings structure.",
+      "limitations": "Do not infer exact Kling4.0 API fields from indexed3.0 text."
+    },
+    {
+      "id": "kling-api-legacy",
+      "url": "https://kling.ai/document-api/api/video/3-0-omni/text-to-video/legacy",
+      "type": "official_legacy_api_page",
+      "read_scope": "Primary-domain indexed schema extract",
+      "supports": "Legacy model_name/negative_prompt/sound fields are versioned and not a 4.0 schema.",
+      "limitations": "Not treated as a current 4.0 request contract."
+    },
+    {
+      "id": "runway-openapi",
+      "url": "https://docs.dev.runwayml.com/openapi.json",
+      "type": "official_machine_schema",
+      "read_scope": "Parsed JSON in memory; inspected gen4.5 and veo3.1 branches for image_to_video/text_to_video",
+      "supports": "Per-model required fields, gen4.5 2–10s, first-frame-only I2V, no gen4.5 audio/negative/CFG field.",
+      "limitations": "Static schema only; no live request."
+    },
+    {
+      "id": "runway-quickstart",
+      "url": "https://docs.dev.runwayml.com/guides/using-the-api/",
+      "type": "official_tutorial",
+      "read_scope": "I2V and text-only examples",
+      "supports": "Retained omission-of-promptImage example conflicts with stricter OpenAPI; conflict recorded."
+    },
+    {
+      "id": "runway-t2v",
+      "url": "https://help.runwayml.com/hc/en-us/articles/42460036199443-Text-to-Video-Prompting-Guide",
+      "type": "official_prompt_tutorial",
+      "read_scope": "Core visual/motion components and natural-language organization",
+      "supports": "T2V requires visible state and motion; no rigid universal formula."
+    },
+    {
+      "id": "runway-i2v",
+      "url": "https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide",
+      "type": "official_prompt_tutorial",
+      "read_scope": "Motion components, implied-motion conflict and continuity troubleshooting",
+      "supports": "Focus on motion when image establishes appearance; avoid source-image/prompt conflict."
+    },
+    {
+      "id": "runway-intro",
+      "url": "https://help.runwayml.com/hc/en-us/articles/46182941379347-Introduction-to-Prompting",
+      "type": "official_prompt_tutorial",
+      "read_scope": "Iteration, positive phrasing, contradictions, JSON FAQ",
+      "supports": "Concrete visual direction and one-variable iteration; JSON formatting is not guaranteed semantic control."
+    },
+    {
+      "id": "original-pv1-author",
+      "url": "https://github.com/EGSECDA/vocaloid-style-mv-pipeline",
+      "type": "original_author_repository",
+      "read_scope": "README production-pipeline overview",
+      "supports": "Metadata-linked source discusses a deterministic animation/rendering production pipeline."
+    },
+    {
+      "id": "original-pv2-author",
+      "url": "https://github.com/Nyankomintsu/world-execute-me-lyric-mv",
+      "type": "original_author_repository",
+      "read_scope": "README, prompt pointers and explanation of V4 production context",
+      "supports": "Public prompts are iterative build records, not a context-free one-shot recipe."
+    }
+  ],
+  "distribution_note": "This file contains public source metadata and research observations. Original local research artifacts, source-page caches, preview frames, host state and private media are not distributed."
+}

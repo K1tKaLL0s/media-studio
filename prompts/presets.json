@@ -1,0 +1,434 @@
+{
+  "schema_version": 1,
+  "studio_root": ".",
+  "where": "local",
+  "validation": {
+    "scope": "staged workflow contracts and official model guidance",
+    "host_generation": "pending",
+    "note": "Presets supply values to a task copy of the named API workflow. They are not /prompt request bodies."
+  },
+  "binding_rule": "Keys on the left address this preset; values on the right address node.inputs.field in the API workflow. Required null inputs must be supplied from the user's materials before submission. Re-check the live node schema.",
+  "presets": [
+    {
+      "id": "anime-character-preview",
+      "modality": "image",
+      "model": "circlestone-labs/Anima:anima-turbo-v1.1.safetensors",
+      "style": "original anime character sheet",
+      "workflow": "workflows/api/anime.json",
+      "prompt": "safe, 1girl, solo, original character, full body, short black hair, amber eyes, teal jacket, white shirt, black trousers, simple pale gray background. She stands facing the viewer with both hands relaxed and fully visible. Clean anime linework, flat colors, even soft lighting, enough empty space around the entire silhouette.",
+      "negative_prompt": "",
+      "seed": 20261019,
+      "parameters": {
+        "width": 512,
+        "height": 512,
+        "steps": 8,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple"
+      },
+      "required_inputs": {},
+      "bindings": {
+        "prompt": "4.inputs.text",
+        "negative_prompt": "5.inputs.text",
+        "seed": "7.inputs.seed",
+        "parameters.width": "6.inputs.width",
+        "parameters.height": "6.inputs.height",
+        "parameters.steps": "7.inputs.steps",
+        "parameters.cfg": "7.inputs.cfg",
+        "parameters.sampler_name": "7.inputs.sampler_name",
+        "parameters.scheduler": "7.inputs.scheduler"
+      },
+      "review": [
+        "Exactly one full body with margin; no cropped hands or feet.",
+        "Check face, limbs, teal jacket and black trousers.",
+        "Keep an accepted master image before creating other poses."
+      ]
+    },
+    {
+      "id": "anime-scene-preview",
+      "modality": "image",
+      "model": "circlestone-labs/Anima:anima-turbo-v1.1.safetensors",
+      "style": "anime background",
+      "workflow": "workflows/api/anime.json",
+      "prompt": "safe, scenery, no humans, quiet riverside street, after rain, stone pavement, warm windows, early evening. A small footbridge leads toward a distant hill, with clear foreground, middle ground and background. Hand-drawn anime background, clean perspective, restrained teal and amber palette, no signage.",
+      "negative_prompt": "",
+      "seed": 20261020,
+      "parameters": {
+        "width": 768,
+        "height": 512,
+        "steps": 10,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple"
+      },
+      "required_inputs": {},
+      "bindings": {
+        "prompt": "4.inputs.text",
+        "negative_prompt": "5.inputs.text",
+        "seed": "7.inputs.seed",
+        "parameters.width": "6.inputs.width",
+        "parameters.height": "6.inputs.height",
+        "parameters.steps": "7.inputs.steps",
+        "parameters.cfg": "7.inputs.cfg",
+        "parameters.sampler_name": "7.inputs.sampler_name",
+        "parameters.scheduler": "7.inputs.scheduler"
+      },
+      "review": [
+        "Check bridge and building perspective.",
+        "Keep foreground space available for a character or later typeset lyrics.",
+        "Confirm no unwanted people or invented lettering."
+      ]
+    },
+    {
+      "id": "general-product-preview",
+      "modality": "image",
+      "model": "black-forest-labs/FLUX.2-klein-4b-fp8",
+      "style": "natural product photograph",
+      "workflow": "workflows/api/image.json",
+      "prompt": "A small white ceramic mug on a warm oak desk beside a closed cream notebook. Soft morning light enters from the left; an uncluttered pale background, three-quarter product view, realistic ceramic texture, no lettering.",
+      "negative_prompt": null,
+      "seed": 20261021,
+      "parameters": {
+        "width": 512,
+        "height": 512,
+        "steps": 4,
+        "cfg": 1
+      },
+      "required_inputs": {},
+      "bindings": {
+        "prompt": "4.inputs.text",
+        "seed": "7.inputs.noise_seed",
+        "parameters.width": [
+          "6.inputs.width",
+          "9.inputs.width"
+        ],
+        "parameters.height": [
+          "6.inputs.height",
+          "9.inputs.height"
+        ],
+        "parameters.steps": "9.inputs.steps",
+        "parameters.cfg": "10.inputs.cfg"
+      },
+      "review": [
+        "Check mug handle and ceramic surface.",
+        "Confirm a single light direction and requested object placement.",
+        "Do not inject a negative prompt into an unconnected field."
+      ]
+    },
+    {
+      "id": "reference-edit-one-change",
+      "modality": "image-edit",
+      "model": "black-forest-labs/FLUX.2-klein-4b-fp8",
+      "style": "preserve source composition",
+      "workflow": "workflows/api/image-edit.json",
+      "prompt": "Change only the ceramic mug from white to deep teal. Preserve its exact shape, handle, position, reflections, background objects, camera angle, and lighting.",
+      "negative_prompt": null,
+      "seed": 20261021,
+      "parameters": {
+        "megapixels": 0.25,
+        "steps": 4,
+        "cfg": 1
+      },
+      "required_inputs": {
+        "reference_image": null
+      },
+      "bindings": {
+        "prompt": "4.inputs.text",
+        "required_inputs.reference_image": "6.inputs.image",
+        "seed": "13.inputs.noise_seed",
+        "parameters.megapixels": "7.inputs.megapixels",
+        "parameters.steps": "15.inputs.steps",
+        "parameters.cfg": "16.inputs.cfg"
+      },
+      "review": [
+        "Supply a real Comfy input filename for the original image.",
+        "Compare source and output side by side.",
+        "Accept only the color change; check preservation of mug geometry and background."
+      ]
+    },
+    {
+      "id": "voice-chinese-warm",
+      "modality": "voice",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "style": "warm calm narration",
+      "workflow": "workflows/api/speech.json",
+      "prompt": "窗外的雨已经停了。我们沿着河边，慢慢走回家。",
+      "negative_prompt": null,
+      "seed": 20261019,
+      "parameters": {
+        "mode": "preset",
+        "language": "Chinese",
+        "speaker": "Serena",
+        "instruct": "用温暖、平静的语气讲述，语速舒缓，句尾自然停顿。",
+        "max_new_tokens": 1024,
+        "timeout_seconds": 900
+      },
+      "required_inputs": {},
+      "bindings": {
+        "prompt": "1.inputs.text",
+        "seed": "1.inputs.seed",
+        "parameters.mode": "1.inputs.mode",
+        "parameters.language": "1.inputs.language",
+        "parameters.speaker": "1.inputs.speaker",
+        "parameters.instruct": "1.inputs.instruct",
+        "parameters.max_new_tokens": "1.inputs.max_new_tokens",
+        "parameters.timeout_seconds": "1.inputs.timeout_seconds"
+      },
+      "review": [
+        "Listen for exact words, natural sentence pauses and a complete final syllable.",
+        "Check decoded WAV duration and non-silence.",
+        "Do not equate an audio preview with having listened to it."
+      ]
+    },
+    {
+      "id": "voice-english-clear",
+      "modality": "voice",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "style": "clear conversational narration",
+      "workflow": "workflows/api/speech.json",
+      "prompt": "The rain has stopped. Let us take the quiet path beside the river.",
+      "negative_prompt": null,
+      "seed": 20261019,
+      "parameters": {
+        "mode": "preset",
+        "language": "English",
+        "speaker": "Ryan",
+        "instruct": "Speak clearly in a calm, conversational tone, with a natural pause between the sentences.",
+        "max_new_tokens": 1024,
+        "timeout_seconds": 900
+      },
+      "required_inputs": {},
+      "bindings": {
+        "prompt": "1.inputs.text",
+        "seed": "1.inputs.seed",
+        "parameters.mode": "1.inputs.mode",
+        "parameters.language": "1.inputs.language",
+        "parameters.speaker": "1.inputs.speaker",
+        "parameters.instruct": "1.inputs.instruct",
+        "parameters.max_new_tokens": "1.inputs.max_new_tokens",
+        "parameters.timeout_seconds": "1.inputs.timeout_seconds"
+      },
+      "review": [
+        "Listen for repeated words, pronunciation and clipping.",
+        "Preserve the exact narration text; keep instructions in the separate field.",
+        "Record actual sample rate from the result."
+      ]
+    },
+    {
+      "id": "voice-clone-reference",
+      "modality": "voice-clone",
+      "model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+      "style": "reference voice identity",
+      "workflow": "workflows/api/speech_clone.json",
+      "prompt": "这是新的测试台词。我们会保留参考声音的特点。",
+      "negative_prompt": null,
+      "seed": 20261019,
+      "parameters": {
+        "mode": "clone",
+        "language": "Chinese",
+        "instruct": "",
+        "max_new_tokens": 1024,
+        "timeout_seconds": 900
+      },
+      "required_inputs": {
+        "reference_audio": null,
+        "reference_text": null
+      },
+      "bindings": {
+        "prompt": "2.inputs.text",
+        "seed": "2.inputs.seed",
+        "parameters.mode": "2.inputs.mode",
+        "parameters.language": "2.inputs.language",
+        "parameters.instruct": "2.inputs.instruct",
+        "parameters.max_new_tokens": "2.inputs.max_new_tokens",
+        "parameters.timeout_seconds": "2.inputs.timeout_seconds",
+        "required_inputs.reference_audio": "1.inputs.audio",
+        "required_inputs.reference_text": "2.inputs.reference_text"
+      },
+      "review": [
+        "Require a supplied reference recording and its exact transcript.",
+        "Use a real Comfy input filename; do not submit the template's example reference.wav.",
+        "Listen for voice similarity separately from text correctness; clone mode has no instruct control."
+      ]
+    },
+    {
+      "id": "video-single-motion-smoke",
+      "modality": "video",
+      "model": "Wan-AI/Wan2.2-TI2V-5B",
+      "style": "one stable continuous shot",
+      "workflow": "workflows/api/video.json",
+      "prompt": "A small paper boat floats slowly from left to right across a shallow puddle on a quiet stone street. Gentle ripples follow the boat; warm morning reflections remain stable. Locked-off camera at puddle level, one continuous shot, natural slow motion.",
+      "negative_prompt": "flicker, warped objects, duplicated subject, sudden scene cut, unstable background, unreadable text",
+      "seed": 20261019,
+      "parameters": {
+        "width": 1280,
+        "height": 704,
+        "length": 17,
+        "fps": 24,
+        "steps": 20,
+        "cfg": 5
+      },
+      "required_inputs": {},
+      "bindings": {
+        "prompt": "4.inputs.text",
+        "negative_prompt": "5.inputs.text",
+        "seed": "8.inputs.seed",
+        "parameters.width": "6.inputs.width",
+        "parameters.height": "6.inputs.height",
+        "parameters.length": "6.inputs.length",
+        "parameters.fps": "10.inputs.fps",
+        "parameters.steps": "8.inputs.steps",
+        "parameters.cfg": "8.inputs.cfg"
+      },
+      "review": [
+        "This is a 17-frame smoke test, about 0.71 seconds, not a completed multi-second shot.",
+        "Decode and inspect first, middle and last frames; play the result to check actual motion.",
+        "Increase duration with 4n+1 frame counts only after the small run succeeds."
+      ]
+    },
+    {
+      "id": "mv-demo-preview",
+      "modality": "mv",
+      "model": "EGSECDA/vocaloid-style-mv-pipeline@13b380dab077d4c8ea956825c9693c720e0c2b91",
+      "style": "original procedural HOTARUBI smoke test",
+      "workflow": "workflows/api/mv.json",
+      "prompt": "Render the already prepared pv-demo project as a preview without changing its engine, timeline, audio or lyrics.",
+      "negative_prompt": null,
+      "seed": null,
+      "parameters": {
+        "project_name": "pv-demo",
+        "quality": "preview",
+        "filename_prefix": "demo",
+        "timeout_seconds": 3600
+      },
+      "required_inputs": {},
+      "bindings": {
+        "parameters.project_name": "1.inputs.project_name",
+        "parameters.quality": "1.inputs.quality",
+        "parameters.filename_prefix": "1.inputs.filename_prefix",
+        "parameters.timeout_seconds": "1.inputs.timeout_seconds"
+      },
+      "review": [
+        "Require the prepared project and analysis/audio.json; rendering does not run setup.",
+        "Check readable lyrics, several distinct shots, beat changes and end card.",
+        "Match decoded duration and frame count to stats; the 24-second song includes a longer video tail."
+      ]
+    },
+    {
+      "id": "mv-prepared-lyric-project",
+      "modality": "mv",
+      "model": "EGSECDA/vocaloid-style-mv-pipeline@13b380dab077d4c8ea956825c9693c720e0c2b91",
+      "style": "song-specific lyric MV",
+      "workflow": "workflows/api/mv.json",
+      "prompt": "Use the supplied song and timed lyrics in an already prepared project. Preserve the accepted character master and visual direction. Keep lyrics readable and clear of the face, align cuts to the analyzed beats, and review the full preview before final rendering.",
+      "negative_prompt": null,
+      "seed": null,
+      "parameters": {
+        "quality": "preview",
+        "filename_prefix": "lyric_mv",
+        "timeout_seconds": 3600
+      },
+      "required_inputs": {
+        "project_name": null
+      },
+      "bindings": {
+        "required_inputs.project_name": "1.inputs.project_name",
+        "parameters.quality": "1.inputs.quality",
+        "parameters.filename_prefix": "1.inputs.filename_prefix",
+        "parameters.timeout_seconds": "1.inputs.timeout_seconds"
+      },
+      "review": [
+        "The project must already contain the user's source song, lyrics, analysis and accepted matching timeline.",
+        "This brief is for the agent; MediaStudioMV consumes parameters, not a natural-language prompt.",
+        "Do not substitute pv-demo for an unprepared user song, and do not call speech synthesis a singing track."
+      ]
+    },
+    {
+      "id": "voice_design-local-unverified",
+      "modality": "speech",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "workflow": "workflows/api/voice_design.json",
+      "parameters": {
+        "instruct": "A calm adult voice, clear articulation and a gentle pace.",
+        "language": "Chinese",
+        "seed": 42,
+        "max_new_tokens": 1024
+      },
+      "required_inputs": {
+        "text": null
+      },
+      "bindings": {
+        "parameters.instruct": "1.inputs.instruct",
+        "parameters.language": "1.inputs.language",
+        "parameters.seed": "1.inputs.seed",
+        "parameters.max_new_tokens": "1.inputs.max_new_tokens",
+        "required_inputs.text": "1.inputs.text"
+      },
+      "validation": "static_only_not_run",
+      "review": [
+        "No model loading or generation performed during integration. Future media jobs must run one at a time."
+      ]
+    },
+    {
+      "id": "speech_index25-local-unverified",
+      "modality": "speech",
+      "model": "IndexTeam/IndexTTS-2.5",
+      "workflow": "workflows/api/speech_index25.json",
+      "parameters": {
+        "text": "请填写要合成的台词。",
+        "language": "Chinese",
+        "duration_factor": 1.0,
+        "seed": 42
+      },
+      "required_inputs": {
+        "reference_audio": null
+      },
+      "bindings": {
+        "parameters.text": "2.inputs.text",
+        "parameters.language": "2.inputs.language",
+        "parameters.duration_factor": "2.inputs.duration_factor",
+        "parameters.seed": "2.inputs.seed",
+        "required_inputs.reference_audio": "1.inputs.audio"
+      },
+      "validation": "static_only_not_run",
+      "review": [
+        "No model loading or generation performed during integration. Future media jobs must run one at a time."
+      ]
+    },
+    {
+      "id": "music-local-unverified",
+      "modality": "music",
+      "model": "ACE-Step/Ace-Step1.5 + ACE-Step/acestep-5Hz-lm-0.6B",
+      "workflow": "workflows/api/music.json",
+      "parameters": {
+        "caption": "A quiet acoustic piano instrumental, gentle and unhurried",
+        "lyrics": "[Instrumental]",
+        "instrumental": true,
+        "vocal_language": "unknown",
+        "duration_seconds": 30,
+        "bpm": 0,
+        "keyscale": "",
+        "timesignature": "",
+        "thinking": true,
+        "seed": 42
+      },
+      "required_inputs": {},
+      "bindings": {
+        "parameters.caption": "1.inputs.caption",
+        "parameters.lyrics": "1.inputs.lyrics",
+        "parameters.instrumental": "1.inputs.instrumental",
+        "parameters.vocal_language": "1.inputs.vocal_language",
+        "parameters.duration_seconds": "1.inputs.duration_seconds",
+        "parameters.bpm": "1.inputs.bpm",
+        "parameters.keyscale": "1.inputs.keyscale",
+        "parameters.timesignature": "1.inputs.timesignature",
+        "parameters.thinking": "1.inputs.thinking",
+        "parameters.seed": "1.inputs.seed"
+      },
+      "validation": "static_only_not_run",
+      "review": [
+        "No model loading or generation performed during integration. Future media jobs must run one at a time."
+      ]
+    }
+  ]
+}

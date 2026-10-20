@@ -1,0 +1,15 @@
+2026-10-20 root 核对记录
+
+BV1aBJz6EEEV：https://www.bilibili.com/video/BV1aBJz6EEEV/
+CUA 实际打开播放器并检查截图两次。HTML video 记录 time=12.666722,duration=79,paused=false,ready=4,muted=true；后续截图记录 time=48.202895,duration=78,paused=false,ready=4,muted=true。实际看到红黑发角色的上身画面及后续近景/全身并列模型展示。只观察两个时点，未连续逐帧观看整个 0–48 秒，未听到音轨，不能据此评价配音、音画同步或模型全部动作质量。页面简介中的制作时间/成本/分工是作者自述，未独立复现。
+Khan Academy Pixar storytelling 课程目录与 virtual-cameras-5 视频页在 CUA 中只加载导航和页脚，没有可见课程播放器；不声称播放观看。搜索可见课程介绍只作为课程定位证据。
+
+审美依据（原创整合，不复制原教程或图）
+W3C WCAG2.2 Understanding contrast-minimum：https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html；正文核对，正常文本4.5:1、大文本3:1，有例外，不能由一次截图宣称全面无障碍合规。
+W3C Understanding 2.3.3：https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html；正文核对，AAA，非必要交互动画应能关闭，遵循减少动态偏好是一种技术；与自动播放内容的2.2.2不同。
+CLIP STUDIO TIPS，kansaqil：https://tips.clip-studio.com/en-us/articles/9758；已读取作者教程正文（非视频播放）。针对 Pop-Anime 的造型、线条、主次色和赛璐璐明暗流程。属于特定作者/风格的方法，不推成所有二次元通用标准，未复制其画面/笔刷/正文。
+ARRI Lighting Handbook PDF 抓取超时，不能用未读取内容支持具体断言；ARRI 官方课程目录仅表明课程存在。
+Blender 4.4 Principled BSDF：https://docs.blender.org/manual/en/4.4/render/shader_nodes/shader/principled.html；只经搜索定位；本轮正文抓取返回402，未以其正文细节支持 Skill，不声称本机已安装 Blender 或实测渲染。
+
+Nikon / Chris Ogonek：https://www.nikonusa.com/learn-and-explore/c/tips-and-techniques/the-basics-of-flash-photography；已读正文，光线方向与反射面颜色对主体的影响，供写实视觉方向参考；没有复制照片或器材曝光配方。
+本机 frontend-design SKILL 已读；沿用其完整前端工作流边界，新 media-look-web 只做独立视觉简报/评议入口，不接管代码实现。

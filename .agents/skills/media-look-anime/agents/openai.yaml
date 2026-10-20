@@ -1,0 +1,4 @@
+interface:
+  display_name: "二次元美术方向"
+  short_description: "制定角色造型、线条和配色规则，维护插画、漫画和动画镜头的一致性"
+  default_prompt: "请使用 $media-look-anime 完成本次对应的创作任务，并给出可审阅产物。"

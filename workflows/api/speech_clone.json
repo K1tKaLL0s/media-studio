@@ -1,0 +1,29 @@
+{
+  "1": {
+    "class_type": "LoadAudio",
+    "inputs": {"audio": "reference.wav"}
+  },
+  "2": {
+    "class_type": "MediaStudioSpeech",
+    "inputs": {
+      "mode": "clone",
+      "text": "这是一段使用参考声音生成的新语音。",
+      "language": "Chinese",
+      "speaker": "Vivian",
+      "instruct": "",
+      "reference_audio_path": "",
+      "reference_text": "请替换为参考音频中准确说出的文字。",
+      "reference_audio": ["1", 0],
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "timeout_seconds": 900
+    }
+  },
+  "3": {
+    "class_type": "SaveAudio",
+    "inputs": {
+      "audio": ["2", 0],
+      "filename_prefix": "speech/media_studio_clone"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "视频模型提示"
+  short_description: "把单镜动作和时间需求转换为视频模型提示，核对时长、参考与声音边界"
+  default_prompt: "请使用 $media-video-prompts 完成本次对应的创作任务，并给出可审阅产物。"

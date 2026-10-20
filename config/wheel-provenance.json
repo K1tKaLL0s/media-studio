@@ -1,0 +1,191 @@
+[
+  {
+    "lock": "ace-inference-requirements-20261020.txt",
+    "package": "torch",
+    "version": "2.7.1+cu128",
+    "filename": "torch-2.7.1+cu128-cp312-cp312-win_amd64.whl",
+    "sha256": "2bb8c05d48ba815b316879a18195d53a6472a03e297d971e916753f8e1053d30"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "av",
+    "version": "19.0.1",
+    "filename": "av-19.0.1-cp312-abi3-win_amd64.whl",
+    "sha256": "906fc3db09288319a75ea23ffefb59961c7dbe0d1c074601507a89de7d8593d8"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "comfy-angle",
+    "version": "0.1.1",
+    "filename": "comfy_angle-0.1.1-py3-none-win_amd64.whl",
+    "sha256": "beddd2e3b9a67e55f5afaef4da73e3ac704fd88f0cbe6a6f67ce5718d7c7edeb"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "comfy-kitchen",
+    "version": "0.2.39",
+    "filename": "comfy_kitchen-0.2.39-cp312-abi3-win_amd64.whl",
+    "sha256": "fa2da09c8ae68748baed7d38e1d4915c55f3fb098039192c004920d773de6dfc"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "comfyui-embedded-docs",
+    "version": "0.5.14",
+    "filename": "comfyui_embedded_docs-0.5.14-py3-none-any.whl",
+    "sha256": "eae6c27521b6243250add8fa39f3263df3b5121739a2fe66ff278f2517f499e9"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "comfyui-workflow-templates-media-assets-02",
+    "version": "0.1.17",
+    "filename": "comfyui_workflow_templates_media_assets_02-0.1.17-py3-none-any.whl",
+    "sha256": "5051468c92a463016d56a90ecc03e67e52299facb46e7246908c45018cdd5fed"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "comfyui_frontend_package",
+    "version": "1.55.18",
+    "filename": "comfyui_frontend_package-1.55.18-py3-none-any.whl",
+    "sha256": "34c388cdf5236b8bae57fd4d8bde54991e65f13f8247213325a6d7852b252053"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "comfyui_workflow_templates",
+    "version": "0.11.89",
+    "filename": "comfyui_workflow_templates-0.11.89-py3-none-any.whl",
+    "sha256": "d58d2abd658aa2a599736ab0d366f2d9bb932ec8c7766b680689093b4a79b2e2"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "numpy",
+    "version": "2.5.4",
+    "filename": "numpy-2.5.4-cp312-cp312-win_amd64.whl",
+    "sha256": "a7b1b6353e36a7e50de2973a38d705c88ee93adcf120673cee7f45a4a3fa223a"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "pillow",
+    "version": "13.0.0",
+    "filename": "pillow-13.0.0-cp312-cp312-win_amd64.whl",
+    "sha256": "ff3fe9eb621fbb9db4c4be33ab946f6bac5f98ab50ca8d3260503653656c961b"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "scipy",
+    "version": "1.18.1",
+    "filename": "scipy-1.18.1-cp312-cp312-win_amd64.whl",
+    "sha256": "5e4d44984abc0020154ea81b247adeddcc3ac5527b975ff798bd1ba0adc513c2"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "tokenizers",
+    "version": "0.23.3",
+    "filename": "tokenizers-0.23.3-cp310-abi3-win_amd64.whl",
+    "sha256": "1f0823bb00c5fdc98e487354d54dd55a03848d61a1a0bf29a68c77f24f3b26c3"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "torch",
+    "version": "2.14.1+cu130",
+    "filename": "torch-2.14.1+cu130-cp312-cp312-win_amd64.whl",
+    "sha256": "0a09031e93632d14ef49553acd6211ece3ae9cdc0969a369b8c24e3cc4d15be9"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "torchvision",
+    "version": "0.29.1+cu130",
+    "filename": "torchvision-0.29.1+cu130-cp312-cp312-win_amd64.whl",
+    "sha256": "14d3195e5e657fef46d08de0d3470da03a983fa383d8aa279e36e47e95d991c6"
+  },
+  {
+    "lock": "comfy-requirements.lock.txt",
+    "package": "transformers",
+    "version": "5.20.1",
+    "filename": "transformers-5.20.1-py3-none-any.whl",
+    "sha256": "5f51ce444193e5d0a751e3fa489ddbc2224ff12f6675a5cfefd4044b09757c19"
+  },
+  {
+    "lock": "index-torch-requirements-20261020.txt",
+    "package": "torch",
+    "version": "2.8.0+cu128",
+    "filename": "torch-2.8.0+cu128-cp310-cp310-win_amd64.whl",
+    "sha256": "43938e9a174c90e5eb9e906532b2f1e21532bbfa5a61b65193b4f54714d34f9e"
+  },
+  {
+    "lock": "pv-requirements.lock.txt",
+    "package": "fonttools",
+    "version": "4.67.0",
+    "filename": "fonttools-4.67.0-cp312-cp312-win_amd64.whl",
+    "sha256": "2bfab2f5d1d255dec82f4bd082a1c10e77df808e42210890f50a9c30bf91570e"
+  },
+  {
+    "lock": "pv-requirements.lock.txt",
+    "package": "llvmlite",
+    "version": "0.50.0",
+    "filename": "llvmlite-0.50.0-cp312-cp312-win_amd64.whl",
+    "sha256": "c20595cc3a76e3c85140fdafbf9246c732ddf8e0e646ba2f4e4881f87567300d"
+  },
+  {
+    "lock": "pv-requirements.lock.txt",
+    "package": "matplotlib",
+    "version": "3.11.2",
+    "filename": "matplotlib-3.11.2-cp312-cp312-win_amd64.whl",
+    "sha256": "c5c1c68ee401fc98271263410f0e5ce88285abacf7627132914e8adf3d70ff43"
+  },
+  {
+    "lock": "pv-requirements.lock.txt",
+    "package": "numba",
+    "version": "0.68.0",
+    "filename": "numba-0.68.0-cp312-cp312-win_amd64.whl",
+    "sha256": "530961dc7e41ee358eca2b828baf7b645ce6fa466d778bb9dc73855dd103c4f7"
+  },
+  {
+    "lock": "pv-requirements.lock.txt",
+    "package": "numpy",
+    "version": "2.5.4",
+    "filename": "numpy-2.5.4-cp312-cp312-win_amd64.whl",
+    "sha256": "a7b1b6353e36a7e50de2973a38d705c88ee93adcf120673cee7f45a4a3fa223a"
+  },
+  {
+    "lock": "pv-requirements.lock.txt",
+    "package": "opencv-python-headless",
+    "version": "5.0.0.93",
+    "filename": "opencv_python_headless-5.0.0.93-cp37-abi3-win_amd64.whl",
+    "sha256": "829717b6a95554f273e49e357cee3b3a2a26b6f4842fbc1bed2b45bdd8f87e0e"
+  },
+  {
+    "lock": "pv-requirements.lock.txt",
+    "package": "pillow",
+    "version": "13.0.0",
+    "filename": "pillow-13.0.0-cp312-cp312-win_amd64.whl",
+    "sha256": "ff3fe9eb621fbb9db4c4be33ab946f6bac5f98ab50ca8d3260503653656c961b"
+  },
+  {
+    "lock": "pv-requirements.lock.txt",
+    "package": "scikit-learn",
+    "version": "1.9.1",
+    "filename": "scikit_learn-1.9.1-cp312-cp312-win_amd64.whl",
+    "sha256": "4b59abb30618121cc46b45972d6bf53a7128b4df4cd346c6ca6f4d5f9031e49c"
+  },
+  {
+    "lock": "pv-requirements.lock.txt",
+    "package": "scipy",
+    "version": "1.18.1",
+    "filename": "scipy-1.18.1-cp312-cp312-win_amd64.whl",
+    "sha256": "5e4d44984abc0020154ea81b247adeddcc3ac5527b975ff798bd1ba0adc513c2"
+  },
+  {
+    "lock": "pv-requirements.lock.txt",
+    "package": "soundfile",
+    "version": "0.14.0",
+    "filename": "soundfile-0.14.0-py2.py3-none-win_amd64.whl",
+    "sha256": "299491d3499460fb1b74bb4bd78b57ffc2d243a5fafa7b6ec1b264875c78453e"
+  },
+  {
+    "lock": "tts-requirements.lock.txt",
+    "package": "torch",
+    "version": "2.14.1+cu130",
+    "filename": "torch-2.14.1+cu130-cp312-cp312-win_amd64.whl",
+    "sha256": "0a09031e93632d14ef49553acd6211ece3ae9cdc0969a369b8c24e3cc4d15be9"
+  }
+]

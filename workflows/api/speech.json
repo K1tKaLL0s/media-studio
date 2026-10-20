@@ -1,0 +1,24 @@
+{
+  "1": {
+    "class_type": "MediaStudioSpeech",
+    "inputs": {
+      "mode": "preset",
+      "text": "你好，欢迎来到媒体创作工作台。Welcome to the media studio.",
+      "language": "Auto",
+      "speaker": "Vivian",
+      "instruct": "语气温暖、自然，像是在向朋友介绍一个新工具。",
+      "reference_audio_path": "",
+      "reference_text": "",
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "timeout_seconds": 900
+    }
+  },
+  "2": {
+    "class_type": "SaveAudio",
+    "inputs": {
+      "audio": ["1", 0],
+      "filename_prefix": "speech/media_studio"
+    }
+  }
+}

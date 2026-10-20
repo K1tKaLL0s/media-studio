@@ -1,0 +1,52 @@
+# STATIC PLAN ONLY: not installed or runtime validated.
+# Python 3.10.x Windows x86-64, separate environment; no upstream source edits.
+# Source: index-tts/index-tts d9e41aac89fd00b3d71497fddb287b7f24613712.
+# Direct runtime/import requirements for infer_v2_5.IndexTTS2 with:
+# use_bf16=True, use_cuda_kernel=False, use_deepspeed=False, use_accel=False,
+# use_torch_compile=False, use_qwen_emo=False, text_normalization=True.
+# All pins are taken from official uv.lock; ordinary transitive dependencies
+# still need resolution. This file is NOT a complete hashed environment lock.
+# torch/torchaudio must be fetched only from the official cu128 PyTorch index:
+# https://download.pytorch.org/whl/cu128 ; remaining packages from official PyPI.
+torch==2.8.0+cu128
+torchaudio==2.8.0+cu128
+accelerate==1.8.1
+argbind==0.3.9
+descript-audiotools==0.7.2
+einops==0.8.1
+fugashi==1.5.2
+huggingface-hub==0.35.0
+kaldifst==1.7.17
+librosa==0.10.2.post1
+matplotlib==3.10.0
+modelscope==1.27.0
+munch==4.0.0
+numba==0.63.0
+numpy==2.2.6
+omegaconf==2.3.0
+openai-whisper==20250625
+packaging==25.0
+PyYAML==6.0.2
+safetensors==0.5.2
+scipy==1.15.3
+sentencepiece==0.2.1
+soundfile==0.13.1
+tiktoken==0.13.0
+tokenizers==0.21.0
+transformers==4.52.1
+tqdm==4.67.1
+typing-extensions==4.15.0
+unidic-lite==1.0.8
+wetext==0.1.0
+
+# Excluded from this selected inference path after static import review:
+# cn2an, cython, ffmpeg-python, g2p-en, jieba, json5, keras, opencv-python,
+# pandas, tensorboard as a direct root (audiotools still requires it transitively),
+# textstat, WeTextProcessing, pynini, nemo_text_processing, gradio, deepspeed,
+# flash-attn, triton-windows, bitsandbytes, optimum, tensorflow.
+# Do not install the upstream package with ordinary dependency resolution after
+# these roots: its full metadata would reintroduce the excluded baseline packages.
+# The adapter explicitly adds the pinned source directory to sys.path.
+
+# Compatibility support from upstream lock / standard build tooling
+setuptools==80.9.0

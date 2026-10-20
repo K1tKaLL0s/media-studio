@@ -1,0 +1,31 @@
+{
+  "MediaStudioSpeech": {
+    "display_name": "本机语音生成",
+    "description": "使用本机 Qwen3-TTS 生成说话音频：预设音色、表达方式或参考音色克隆。生成成功不代表已经完成试听。",
+    "inputs": {
+      "mode": {"name": "生成模式", "tooltip": "preset 使用预设音色；clone 使用参考录音。技术枚举值保持原样。"},
+      "text": {"name": "朗读文本", "tooltip": "要生成的完整台词。"},
+      "language": {"name": "朗读语言", "tooltip": "选择台词语言；Auto 为自动识别。"},
+      "speaker": {"name": "预设音色", "tooltip": "选择预设说话音色，音色标识保持原样。"},
+      "instruct": {"name": "表达方式", "tooltip": "预设音色模式下的语气、情绪或节奏描述，可留空。"},
+      "reference_audio_path": {"name": "参考音频路径", "tooltip": "参考音色克隆使用的本机录音路径。也可连接参考音频输入。"},
+      "reference_text": {"name": "参考音频原文", "tooltip": "参考录音中实际说出的准确文本。"},
+      "seed": {"name": "随机种子", "tooltip": "固定种子便于对照生成结果。"},
+      "max_new_tokens": {"name": "最大生成标记数", "tooltip": "限制生成长度，过小可能截断台词。"},
+      "timeout_seconds": {"name": "最长执行时间（秒）", "tooltip": "超过此时限后停止本节点拥有的外部生成进程。"},
+      "reference_audio": {"name": "参考音频", "tooltip": "连接用于克隆说话音色的录音。"}
+    },
+    "outputs": {"0": {"name": "音频", "tooltip": "实际生成的说话音频。"}}
+  },
+  "MediaStudioMV": {
+    "display_name": "歌词影像渲染",
+    "description": "使用本机已有 PV 项目和作者渲染引擎生成歌词影像。技术项目名保持原样。",
+    "inputs": {
+      "project_name": {"name": "已有项目", "tooltip": "选择已经准备好的本机项目，例如 pv-demo。"},
+      "quality": {"name": "渲染质量", "tooltip": "preview 为预览，final 为完整品质。技术枚举值保持原样。"},
+      "filename_prefix": {"name": "输出文件名前缀", "tooltip": "用于保存视频的技术文件名前缀。"},
+      "timeout_seconds": {"name": "最长执行时间（秒）", "tooltip": "超过此时限后停止本节点拥有的外部渲染进程。"}
+    },
+    "outputs": {"0": {"name": "视频", "tooltip": "实际渲染的歌词影像。"}}
+  }
+}

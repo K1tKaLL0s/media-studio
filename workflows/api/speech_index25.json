@@ -1,0 +1,22 @@
+{
+  "1": {
+    "class_type": "LoadAudio",
+    "inputs": {"audio": "reference.wav"}
+  },
+  "2": {
+    "class_type": "MediaStudioIndexTTS25",
+    "inputs": {
+      "text": "请填写要合成的台词。",
+      "language": "Chinese",
+      "reference_audio_path": "",
+      "reference_audio": ["1", 0],
+      "duration_factor": 1.0,
+      "seed": 42,
+      "timeout_seconds": 900
+    }
+  },
+  "3": {
+    "class_type": "SaveAudio",
+    "inputs": {"audio": ["2", 0], "filename_prefix": "speech/media_studio_index25"}
+  }
+}

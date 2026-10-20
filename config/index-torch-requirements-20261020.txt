@@ -1,0 +1,2 @@
+torch==2.8.0+cu128
+torchaudio @ https://download-r2.pytorch.org/whl/cu128/torchaudio-2.8.0%2Bcu128-cp310-cp310-win_amd64.whl#sha256=5d7a9d913e2744573ed3b7ec2f781ed39833c81c9c41859973ec10ac174c2366

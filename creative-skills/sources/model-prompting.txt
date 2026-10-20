@@ -1,0 +1,116 @@
+图片与视频模型提示词研究
+查验日期：2026-10-20，Asia/Hong_Kong。用途：专业多媒体 Skills 的模型适配依据；不是安装、接入或生成成功证明。
+
+先采用本机已选的 Anima Turbo v1.1、FLUX.2 Klein 4B distilled FP8、Wan2.2 TI2V-5B。为每次请求分别记录创作意图、模型专用提示词、采样/输出设置、参考材料和验收条件，不制作一个向所有模型原样转发的万能提示词。
+
+一、原视频实际阅览范围
+
+BV1y7aJ65ETc：
+https://www.bilibili.com/video/BV1y7aJ65ETc/
+官方公开元数据标题为“【已开源】opus5.5大人调用blender 一键出术力口PV有点太拟人了-アビスライト”，作者 NikusonP，时长173秒。本次复看 work/video_group_b/BV1y7aJ65ETc-sprites.jpg 的34个非空缩略格；此前也是这种 storyboard 抽样，不是连续看完或听完。
+可见内容：深色空间、人物剪影、青色线框/网格与轨迹、按词组拆分的日文大字、红色心形；中后段变为浅底与暖色云层。这里只能说明视觉母题和画面状态；缩略格不能证明转场速度、节拍精度、音画同步或生成方式。
+2026-10-20 实际读取官方 view/videoshot API。videoshot 当前索引去掉首个重复0后为0、5、10…170秒，含51/77等非等距点；具体数组见 model-sources.json。当前索引与本地34格数量相符，未重新下载并比对远端 sprite 哈希，因此时间仅为当前接口的对应参考，不能当逐帧实测。
+作者简介链接到 https://github.com/EGSECDA/vocaloid-style-mv-pipeline 。本次打开作者仓库正文确认它描述的是代码动画/渲染管线；这与静帧观察分开记录。
+
+BV186pc65E68：
+https://www.bilibili.com/video/BV186pc65E68/
+官方元数据标题为“【4K60】用10亿token 13017帧 画出Claude眼中的世界 | world.execute(me);”，作者真寻Mahiro，时长217秒。复看 work/video_group_b/BV186pc65E68-sprites.jpg 的28个非空格；没有连续播放、听音或读取完整视频字幕。
+可见内容：暗色聊天窗口、米白文字与橙红强调、聊天/代码/终端三种画面、角色剪影、大字和高对比画面。由缩略图可以推测其使用统一视觉语法，不能据此验证所有镜头的连贯性。
+官方简介自述 Canvas2D+WebGL、无头浏览器逐帧渲染、ffmpeg 封装，以及13,017帧、token用量、成本等数字。数字是作者自述，不是本次实测。当前公开索引为0、8、16…209秒，完整数组留 JSON，时间映射限制同上。
+实际打开作者仓库 https://github.com/Nyankomintsu/world-execute-me-lyric-mv ，README 链回同一 BV。README 明确说明公开提示词是多轮创作记录；第四版提示词依赖已有第三版，不是一段从零一键完成的食谱。没有阅读其约2.3万字提示词全文。
+
+二、本次实际浏览的同类讲解
+
+实际读取了官方 BFL Prompt Reference 的 FLUX.2 Klein 段、Comfy 的三条模型教程、Runway 的 Introduction / Text to Video / Image to Video Prompting Guide，以及 Kling4.0 User Guide 的模式选择、有效提示词、素材角色、时间段结构。它们是正文讲解与图例说明阅读；未将网页内嵌 GIF、视频链接或搜索摘要冒充连续视频观看/听音。
+有价值的差异：Runway I2V 指南强调已有图像提供视觉状态，文字主要补运动；BFL Klein 要求连贯描述且不会自动扩写；Kling4 界面用素材编号明确身份/动作/场景角色。上述是各自官方建议，迁移到本地模型时属于待验收的创作方法，不等于同名控制字段。
+
+三、短参数矩阵
+
+入口/精确范围 | 提示风格 | negative/CFG | 参考、时长、音频
+Anima 完整 Turbo v1.1 | 小写空格标签可混自然语言 | CFG1、8–12步；现有图的负分支不应宣传为有效控制 | 当前 anime.json 仅T2I；不承诺写实或长文字
+FLUX.2 Klein4B distilled FP8 | 连贯场景描述；编辑说改变什么、保留什么 | 官方4B示例 guidance_scale=1、4步；本图CFG1，不提供负提示承诺 | 本地 image-edit.json 只接1张图；官方云端多参考能力不等于本地已接入
+Wan2.2 TI2V-5B | 可见主体/场景+动作/环境运动+镜头 | 本地CFG5、20步、shift8；支持独立负条件 | 本地T2V/I2V；24fps；基础17帧，另有49帧技术成功；当前图无音轨
+GPT Image2.5 Flare/Sunburst | 自然语言，编辑明确保留范围 | Images API 不暴露negative_prompt/CFG/采样步数 | 生图/编辑；size、quality独立字段；云端未接入
+Midjourney V8.2 / Niji7 | 描述画面；参数置末尾 | --no 为MJ语法；不等同Comfy负节点/CFG | V8.X用Edit Model；V7 --oref不可跨版本照搬
+Sora2 / sora-2-pro | 仅保留镜头、动作、简短对白分层方法 | 历史schema不作当前调用模板 | Videos API已2026-09-24关闭，不设自动执行入口
+Imagen4 generate-001 | 历史T2I档案 | 不支持negative；不是Imagen3 capability编辑模型 | Gemini API已关闭；所查Cloud模型卡亦标停用，不作默认入口
+Veo3.1 | 镜头/动作+独立音频描述 | Google Cloud路线列negativePrompt；不暴露Comfy CFG | Cloud列veo-3.1-generate-001；Gemini preview将10月22日关闭，不能混同生命周期
+Kling4.0网页 / Kling3.0 API | 网页先声明素材角色，再写事件与音频 | Kling4指南建议少用否定；3.0旧API的negative_prompt不能当4.0字段 | 4.0网页3–30秒、有声音能力；精确4.0 API schema尚未核实
+Runway gen4.5 API | T2V描述视觉+运动；I2V侧重运动 | 当前分支无negative/CFG/audio字段，不承诺原生有声 | 2–10整数秒；I2V仅首帧；T2V与I2V端点不同
+
+矩阵的“无字段”指本次具体接口/工作流未提供，并不等于模型所有产品形态都无法表达排除意图。自然语言“只改变杯身颜色”与独立 negative_prompt 不是同一控制机制。
+
+四、本机设置与请求映射
+
+已读 E work/staging/visual/api 的早期 JSON 和 parameter-mapping.json，并只读回查2026-10-20的N盘当前视频API；执行时仍需重读当前presets/API，不能凭这份研究宣称服务、模型下载或身份一致性已经通过。
+Comfy 0.42.1 对 CFG1 默认跳过 unconditional 计算的源码已核对。Anima模板虽有5.text，CFG1下不能用“填写负提示”保证去水印/修手；也不要为让负提示生效擅自把Turbo改成Base参数。完整Turbo1.1不再叠加旧Turbo LoRA。
+Anima的标签/自然语言兼容来自模型卡；Aesthetic段的score标签建议不是Turbo1.1专用结论。正提示优先写可见构图、人物特征与媒介，评分标签不当质量保证。
+FLUX本地保持 Flux2Scheduler。官方Base、9B、pro/flex/max的步数、guidance、参考数或prompt upsampling不能直接移植。Klein官方文档说没有自动扩写，调用者必须写清内容。
+Wan上游默认配置为50步、shift5、CFG5、121帧、24fps；Comfy基础预览为20步、shift8、17帧。二者是不同实现/预览约定，不混写为一个“官方最佳参数”。上游函数支持n_prompt与4n+1帧，S2V-14B是另一个模型，不能给本地TI2V-5B凭空加音频。
+N盘已从早期E暂存512×288改为官方画幅：T2V1280×704、I2V704×1280；原小尺寸曾出现严重彩条，不作为新任务默认省内存起点。另有workflows/api/video-quality-49.json与video-i2v-quality-official.json，均49帧/20步/24fps；本次已只读核对文件和字段。主进程报告二者技术成功，时长约2.0417秒、耗时约3391/4198秒；不是本代理重放/观看证明，也不代表完整眨眼及所有语义质量通过。17帧是基础模板，不是平台能力上限。
+5秒目标按24fps约需121帧（约5.04秒，合法4n+1）；要求精确5.000秒可在后期裁掉1帧并记录。121帧是尺寸/时间推算，不是8GB实跑成功证明，不能静默拿17帧交付5秒。
+
+本地字段示意（非完整可提交工作流，点号表示API图节点输入）：
+anime.json：4.inputs.text；6.inputs.width/height；7.inputs.seed/steps/cfg。
+image.json：4.inputs.text；6与9的width/height同步；7.inputs.noise_seed；9.inputs.steps；10.inputs.cfg。
+image-edit.json：4.inputs.text；6.inputs.image；7.inputs.megapixels；13.inputs.noise_seed；15.inputs.steps；16.inputs.cfg。
+video.json / video-i2v.json：4.inputs.text；5.inputs.text；6.inputs.width/height/length；8.inputs.seed/steps/cfg；10.inputs.fps；I2V另填12.inputs.image。
+POST /prompt 的完整外壳为 {"prompt": 完整API图, "client_id": 独立ID}。输入图必须真实上传并使用返回名字，不能把REPLACE_WITH_UPLOADED_IMAGE.png当素材。实际执行由 media-studio 完成；不在这份研究创建请求。
+
+五、少量模型专用正反例（全部为本次自写，未生成验证）
+
+Anima正例：
+1girl, solo, original character, short silver hair, blue eyes, navy coat, standing, seaside, three-quarter view, medium shot, clean lineart, cel shading, safe. An anime illustration of a young adult standing on a quiet shore. Her full head and both hands remain inside the frame, with open space on the right for later typography.
+反例：把photorealistic、flat cel shading、油画厚涂混成一条；堆数十个quality词但不交代人数/姿态；以CFG7和40步运行完整Turbo，或宣称负提示必能修好手。
+
+FLUX编辑正例：
+Move the same character to a quiet shoreline at dawn. Preserve the face shape, silver bob haircut, navy coat and its buttons, body proportions, and three-quarter pose. Replace the background with pale sea and a low horizon. Match the soft side light to the new setting.
+反例：“make it better, masterpiece, negative_prompt=bad hands --ar 16:9”。这里抽象目标、SD式负词和MJ参数混在一起；--ar不会替代宽高字段。参考图只接一张，不编造第二张身份/风格输入。
+
+Wan I2V正例：
+The character stands on the shoreline. A gentle breeze moves only the hair tips and coat hem; small waves advance behind the character. The camera slowly dollies closer from a medium shot. The character keeps the same face, clothing and pose. One continuous shot with restrained movement.
+可选短负条件：abrupt cuts, warped face, duplicated limbs, flicker。只在本地Wan有效负分支填写，按实际缺陷选，不当通用几十行咒语。
+反例：17帧内要求转身、跑步、起飞、绕拍一周、换装并讲两句对白；同时要求locked-off与orbit camera；把“5 seconds, music”写进正提示就声称字段和音轨已经实现。
+
+GPT Image2.5最小生图请求形状（未执行）：
+POST /v1/images/generations
+{"model":"gpt-image-2.5-flare","prompt":"A square editorial photograph of a ceramic cup on pale stone. Soft light comes from the left. Leave the top third clear for later lettering.","size":"1024x1024","quality":"medium","output_format":"png"}
+编辑用Images edits入口和实际image输入；说明修改/保留对象。不要附sampler、cfg、negative_prompt或Midjourney尾参数。Sunburst与Flare使用同quality标签也不代表同等耗时/质量。
+
+Midjourney网页/Discord提示形状（不是HTTP JSON）：
+A silver-haired adult in a navy coat on a quiet shoreline, restrained blue and warm ivory palette, clear silhouette, space for a title --ar 16:9 --v 8.2 --no text watermark
+V8.2参考编辑按Edit Model入口实际附图；不把V7的--oref/--ow或V6的--cref/--cw贴到此例。
+
+Google Cloud Veo3.1请求形状（非Gemini preview，未执行）：
+POST .../publishers/google/models/veo-3.1-generate-001:predictLongRunning
+{"instances":[{"prompt":"A small paper boat drifts across a still pond. Slow lateral tracking shot. Quiet water ripples and distant birds; no dialogue."}],"parameters":{"sampleCount":1,"aspectRatio":"16:9","negativePrompt":"abrupt cuts, subtitles"}}
+这是Cloud教程列出的字段子集，非完整JSON Schema，也未承诺账号/地区可用。时长、音频开关和分辨率要在选定当前端点的模型专属schema核对后加入，不跨搬Runway的ratio/audio或Gemini的配置。
+
+Runway gen4.5 I2V请求形状（未执行）：
+POST /v1/image_to_video，X-Runway-Version: 2024-11-06
+{"model":"gen4.5","promptImage":"https://example.com/authorized-character.png","promptText":"A gentle breeze moves the hair tips and coat hem. Slow, steady push-in. The character holds the pose.","ratio":"1280:720","duration":5}
+真正T2V用/v1/text_to_video并删除promptImage。当前OpenAPI与quickstart省图示例冲突，采用模型判别分支，不把示例省字段当接口证据。未列audio/negativePrompt/CFG，不把同服务Veo分支字段加进gen4.5。
+
+Kling4.0网页提示形状（不是已核实API请求）：
+@Image1 supplies the character identity and clothing. Keep its facial structure, hair and navy coat.
+0–3 s: The character stands on a quiet shore; a breeze lightly moves the hair and coat hem.
+3–5 s: A restrained push-in reveals small waves behind the character.
+Audio: soft surf only, no dialogue, no subtitles, no background music.
+@Image1须绑定当前界面的真实素材；不是传一个字符串就上传了文件。4.0公开指南有多模态能力，而本次可检索API正文仍以3.0为题；不据此虚构kling-v4或新端点。
+
+六、质量与审美观察
+
+从两张PV storyboard可提炼的是“有限而反复出现的视觉母题”和“前景文字/人物/空间的层级”，不是让模型每次随机堆更多细节。先决定主体、文字留白与高对比的分配，再生成素材；歌词排版/精确文字优先交给后期代码或排版工具。
+二次元检查轮廓、五官比例、眼神方向、手与道具接触、服装关键识别点；写实检查空间透视、光源方向/阴影、皮肤与材料尺度。不同媒介各自检查，不把“有毛孔”当所有图片的质量标准。
+视频另检查动作起止、接触/重心、遮挡、运动方向、镜头路径、时间容量和跨帧身份。提示词里写了“保持一致”仍需看输出；固定seed也不能保证跨模型/尺寸/镜头身份一致。
+
+七、版本冲突、未接入和确认边界
+
+Sora：当前API reference与deprecations都说2026-09-24关闭；旧guide/cookbook仍示范可提交请求和更长时长。优先停用证据，不以仍能打开的教程判定可用。
+Imagen：Gemini Imagen页明确已关闭；Cloud Imagen4卡列2026-06-30停用。负提示从imagen-3.0-generate-002以后不再支持；不要引用早期Imagen3教程推断Imagen4有negative或参考编辑。
+Veo：Gemini的3.1 preview停用日为2026-10-22；Google Cloud文档另列001路线。生命周期按服务分别记录，不把Google全家一概标为关闭或一概可用。
+Kling：4.0网页指南2026-10-14发布；其中HDR在正文写coming soon、能力表却列支持，不能承诺现成HDR。3.0 API的旧/新字段也不同。仅给用户可复制的网页创作说明，等真实接口后再绑定执行。
+所有商业云端本轮均未配置、未授权支出、未上传材料、未提交请求；以上例子不代表接入完成。实际调用前必须确认供应商/服务、精确模型及地区可用性、成本上限/数量、待上传材料和用途；已有明确授权不重复询问。用户回答前暂停依赖该选择的调用与交付，不用免费预览或换供应商绕过。
+本轮不改变N运行图、不安装下载模型、不重试GPU。不把官方8GB适配陈述等同本机长片实测；现行media-studio记录与真实产物才是执行依据。
+
+来源索引及证据类型见同目录 model-sources.json；最终两个技能的model-profiles引用其中精选官方页面。网址已实际打开；不可访问或仅搜索索引正文的材料另行标记。

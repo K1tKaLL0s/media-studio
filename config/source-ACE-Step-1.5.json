@@ -1,0 +1,13 @@
+{
+  "repository": "ace-step/ACE-Step-1.5",
+  "revision": "ca1e85fe9430179831e6bc6be790c332190a3866",
+  "url": "https://codeload.github.com/ace-step/ACE-Step-1.5/zip/ca1e85fe9430179831e6bc6be790c332190a3866",
+  "path": ".\\runtime\\ACE-Step-1.5",
+  "archive_bytes": 9148700,
+  "archive_local_sha256": "108e45dffc7eb62af98d781c4159aa63a2b7a241186734e3e065279da7fc198d",
+  "integrity": "all extracted files matched fixed official Git tree SHA1; zip CRC passed",
+  "verified_files": 1222,
+  "missing_git_files": [],
+  "timestamp": "2026-10-20T08:54:14.147842+00:00",
+  "runtime_validation": "not_run"
+}

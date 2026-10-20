@@ -1,0 +1,292 @@
+{
+  "research_date": "2026-10-20",
+  "researcher": "video_group_a_frames",
+  "scope": "story, prose/comic storyboard, timed animatic, directing, sound-picture relations, interpretation/tour narration",
+  "global_limits": {
+    "continuous_video_playback_by_this_agent": false,
+    "audio_actually_heard": false,
+    "cua_error": "Two initialization attempts failed before browsing: failed to write kernel assets, os error 3",
+    "youtube_caption_status": "Public caption tracks found, timedtext bodies empty; no caption passages claimed",
+    "preview_times": "Discrete official preview samples, not full intervals; Bilibili raw index starts with duplicate zero",
+    "private_material_uploaded": false,
+    "paid_services": false,
+    "gpu_run": false
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://www.bilibili.com/video/BV1aBJz6EEEV/",
+      "title": "【Live2D模型展示】GPT拆分+Claude建模，纯外行用AI做皮套能到什么程度？",
+      "author": "大熊Kuma",
+      "duration_seconds": 79,
+      "evidence_type": [
+        "reinspected_retained_official_preview_frames",
+        "in_frame_credits"
+      ],
+      "observed_samples_seconds": [
+        0,
+        0,
+        8,
+        16,
+        24,
+        33,
+        41,
+        49,
+        58
+      ],
+      "evidence_file_names_not_distributed": [
+        "live2d-selected.png",
+        "BV1aBJz6EEEV-metadata.json",
+        "BV1aBJz6EEEV-sample-map.json"
+      ],
+      "observation": "Red-black character face/upper body/full-body layout; differing head, gaze and hand poses across samples.",
+      "transfer": "Visual anchors and cross-shot identity QA; separate declared tool workflow from displayed results.",
+      "limits": "No continuous motion, binding range, lip sync or audio quality verification."
+    },
+    {
+      "id": "S02",
+      "url": "https://www.bilibili.com/video/BV1GcnL6nEvR/",
+      "title": "一句话就能复刻音色？DSH-DDSP训练插件来了！",
+      "author": "苌萌萌",
+      "duration_seconds": 420,
+      "evidence_type": [
+        "reinspected_retained_official_preview_frames",
+        "burned_in_text"
+      ],
+      "observed_samples_seconds": [
+        16,
+        41,
+        75,
+        83,
+        100,
+        116,
+        133,
+        150,
+        166,
+        183,
+        233,
+        283
+      ],
+      "evidence_file_names_not_distributed": [
+        "ddsp-selected.png",
+        "BV1GcnL6nEvR-metadata.json",
+        "BV1GcnL6nEvR-sample-map.json"
+      ],
+      "observation": "Dataset preparation; 358 clips/24.8 minutes; 20000-step checkpoint; integration with existing singing conversion flow.",
+      "transfer": "Data/preparation/validation remain distinct from a one-line UI request; separate VC/training/TTS/singing.",
+      "limits": "No listened timbre comparisons; title does not prove one-utterance training."
+    },
+    {
+      "id": "S03",
+      "url": "https://www.bilibili.com/video/BV1eaaS6jETy/",
+      "title": "【AI动漫PV教学】丰川祥子教你一句话codex制作高质量PV",
+      "author": "黑猫勇者",
+      "duration_seconds": 488,
+      "evidence_type": [
+        "new_official_preview_frame_sampling",
+        "burned_in_subtitles"
+      ],
+      "observed_samples_seconds": [
+        0,
+        15,
+        60,
+        110,
+        160,
+        210,
+        263,
+        313,
+        363,
+        413,
+        443,
+        473
+      ],
+      "evidence_file_names_not_distributed": [
+        "BV1eaaS6jETy-selected.jpg",
+        "BV1eaaS6jETy-sample-map.json",
+        "BV1eaaS6jETy-metadata.json"
+      ],
+      "observation": "Agent/workflow distinction diagram; practical steps; keyframe grid; natural-language revisions; installation/interface demo.",
+      "transfer": "Contact-sheet review before targeted revisions; distinguish tool operation from creative method.",
+      "limits": "First traceable inspection of this video's frames by this agent is this continuation; no continuous playback or audio; no generic arbitrary-storyboard engine claim."
+    },
+    {
+      "id": "S04",
+      "url": "https://www.youtube.com/watch?v=9AGaECt9j4g",
+      "title": "Film Blocking Tutorial — Filmmaking Techniques for Directors: Ep3",
+      "author": "StudioBinder",
+      "duration_seconds": 295,
+      "evidence_type": [
+        "official_youtube_storyboard_preview_frames",
+        "author_companion_page"
+      ],
+      "observed_intervals": {
+        "meaning": "discrete samples only",
+        "ranges_seconds": [
+          [
+            50,
+            98
+          ],
+          [
+            150,
+            198
+          ]
+        ],
+        "interval_seconds": 2
+      },
+      "evidence_file_names_not_distributed": [
+        "youtube-9AGaECt9j4g-L2-M1.jpg",
+        "youtube-9AGaECt9j4g-L2-M3.jpg",
+        "preview-evidence.json"
+      ],
+      "companion_url": "https://www.studiobinder.com/filmmaking-techniques-film-blocking/",
+      "observation": "SPACE/SHAPES/LINES cards, window/table positioning and foreground-background/line examples.",
+      "transfer": "Block relationships and audience attention before choosing camera movement.",
+      "limits": "160x90 samples; no performance timing or audio judgement; no film-name guesses."
+    },
+    {
+      "id": "S05",
+      "url": "https://www.youtube.com/watch?v=3MK9umqHihc",
+      "title": "Storyboard Arrows Explained — How to Build a Dynamic Storyboard",
+      "author": "StudioBinder Academy",
+      "duration_seconds": 650,
+      "evidence_type": [
+        "official_youtube_storyboard_preview_frames"
+      ],
+      "observed_intervals": {
+        "meaning": "nine discrete samples",
+        "ranges_seconds": [
+          [
+            180,
+            220
+          ]
+        ],
+        "interval_seconds": 5
+      },
+      "evidence_file_names_not_distributed": [
+        "youtube-3MK9umqHihc-L3-M4.jpg",
+        "preview-evidence.json"
+      ],
+      "observation": "Corridor drawing/live-action comparison; arrows and Dolly In annotation added to drawing.",
+      "transfer": "Annotate subject action separately from camera direction and endpoints.",
+      "limits": "No audio/available subtitles; speed and motivation guidance is synthesis, not quoted narration."
+    },
+    {
+      "id": "S06",
+      "url": "https://www.youtube.com/watch?v=Wnbo_PVfMfE",
+      "title": "What is a Storyboard and How to Make One",
+      "author": "StudioBinder Academy",
+      "duration_seconds": 224,
+      "evidence_type": [
+        "official_youtube_storyboard_preview_frames",
+        "author_companion_page"
+      ],
+      "observed_intervals": {
+        "meaning": "nine discrete samples",
+        "ranges_seconds": [
+          [
+            72,
+            88
+          ]
+        ],
+        "interval_seconds": 2
+      },
+      "evidence_file_names_not_distributed": [
+        "youtube-Wnbo_PVfMfE-L3-M4.jpg",
+        "preview-evidence.json"
+      ],
+      "companion_url": "https://www.studiobinder.com/tutorials/visualize/intro-to-storyboarding/",
+      "observation": "Panel grid, notes and share/collaboration controls; companion page discusses arrows and audio/video descriptions.",
+      "transfer": "Boards are numbered production communication, not only attractive pictures.",
+      "limits": "Sample is mainly sharing workflow; no claim to watching full story development lesson; no software subscription required."
+    },
+    {
+      "id": "S07",
+      "url": "https://www.screenskills.com/job-profiles/browse/animation/development/writer-animation/",
+      "title": "Writer (Animation)",
+      "author": "ScreenSkills",
+      "evidence_type": [
+        "official_page_body_read"
+      ],
+      "observed_section": "What does a writer do?",
+      "transfer": "Ideas to scene outline to action/dialogue script; collaboration with director and boards.",
+      "limits": "Goal/obstacle/choice/consequence is an implementation synthesis, not a universal quoted formula."
+    },
+    {
+      "id": "S08",
+      "url": "https://www.screenskills.com/job-profiles/browse/animation/pre-production/head-of-story/",
+      "title": "Head of story",
+      "author": "ScreenSkills",
+      "evidence_type": [
+        "official_search_extracted_body"
+      ],
+      "observed_section": "Role, staging/camera panels, continuity, animatics and revisions",
+      "transfer": "Use sequences/animatics to resolve action, staging, continuity and revisions before expensive production.",
+      "limits": "External linked videos not watched."
+    },
+    {
+      "id": "S09",
+      "url": "https://www.screenskills.com/starting-your-career/lesson-plans-and-classroom-resources/simple-storyboards-why-and-how-to-make-them/",
+      "title": "Simple storyboards: why and how to make them",
+      "author": "ScreenSkills",
+      "evidence_type": [
+        "official_page_body_read"
+      ],
+      "observed_section": "Silent first draft; drama/documentary/performance board types",
+      "transfer": "Check key action visually, choose picture/voice relationships for the medium.",
+      "limits": "Introductory guidance; does not ban all narration or equate comics with timed shots."
+    },
+    {
+      "id": "S10",
+      "url": "https://www.screenskills.com/skills-checklists/scripted-film-and-tv/editorial-department/editor-skills/",
+      "title": "Editor skills",
+      "author": "ScreenSkills",
+      "evidence_type": [
+        "official_page_body_read",
+        "official_pdf_search_extract"
+      ],
+      "supporting_url": "https://www.screenskills.com/media/fevmvvj5/editor-skills-checklist.pdf",
+      "observed_section": "Role; assembling scenes and director cut",
+      "transfer": "Coverage, performance, rhythm, sound and picture need review together before picture lock.",
+      "limits": "PDF not read end to end; no actual mix/listening assessment."
+    },
+    {
+      "id": "S11",
+      "url": "https://www.screenskills.com/skills-checklists/unscripted-tv/post-production-department/sound-effects-editor-skills/",
+      "title": "Sound effects editor skills",
+      "author": "ScreenSkills",
+      "evidence_type": [
+        "official_page_and_search_body_read"
+      ],
+      "observed_section": "Rough cut, spotting and story/emotion responsibilities",
+      "transfer": "Create a cue sheet from narrative function and perspective before layering effects.",
+      "limits": "Not a capability inventory of installed audio generators."
+    },
+    {
+      "id": "S12",
+      "url": "https://www.nps.gov/subjects/hfc/upload/interp-visitor-exper.pdf",
+      "title": "Planning for Interpretation and Visitor Experience",
+      "author": "U.S. National Park Service / Harpers Ferry Center",
+      "evidence_type": [
+        "official_pdf_text_read"
+      ],
+      "observed_section": "Interpretive themes, printed page 13 vicinity",
+      "transfer": "A complete theme identifies important meaning; media/interpretive design supplies how to convey it.",
+      "limits": "Heritage/nature interpretation source, not complete tour operations or safety standard."
+    },
+    {
+      "id": "S13",
+      "url": "https://www.nps.gov/media/video/view.htm?id=3102579C-BC38-82AC-E4FBAC4AE568E45A",
+      "title": "Becky Lacome: The Evolution of Interpretation in the NPS",
+      "author": "National Park Service; host Lu Ann Jones; interviewee Becky Lacome",
+      "duration_seconds": 602,
+      "media_type": "audio",
+      "evidence_type": [
+        "official_untimed_transcript_read"
+      ],
+      "observed_section": "Expert lecture to personal relevance and audience participation",
+      "transfer": "Tie tangible resources to meanings and invite visitor connections; separate guide narration from fictional drama.",
+      "limits": "Not listened; untimed transcript has no invented minute range; no field route validation."
+    }
+  ],
+  "distribution_note": "This file contains public source metadata and research observations. Original local research artifacts, source-page caches, preview frames, host state and private media are not distributed."
+}

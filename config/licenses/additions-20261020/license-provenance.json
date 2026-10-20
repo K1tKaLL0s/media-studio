@@ -1,0 +1,39 @@
+{
+  "repo": "Qwen/Qwen3-Embedding-0.6B",
+  "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "license": "apache-2.0",
+  "files": [],
+  "saved_evidence": [
+    {
+      "file": "Qwen3-Embedding-0.6B-README.md",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/raw/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md",
+      "bytes": 17237,
+      "sha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3",
+      "included_in_public_snapshot": false
+    },
+    {
+      "file": "Qwen3-Embedding-0.6B-metadata.json",
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/revision/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3?blobs=true",
+      "bytes": 10131,
+      "sha256": "3f0895f179b43a384484aaaf91d1824d787fa6d4551d01c48fd53df907c35e13",
+      "included_in_public_snapshot": false
+    },
+    {
+      "file": "Apache-2.0-standard.txt",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "included_in_public_snapshot": true
+    }
+  ],
+  "note": "Official Qwen embedding HF and GitHub repositories have no separate LICENSE file at inspected revisions. Apache-2.0 is declared in fixed HF README/metadata. Apache text is the canonical Apache Software Foundation license, not a Qwen-authored LICENSE file.",
+  "qwen_github_revision": "44548aa5f0a0aed1c76d64e19afe47727a325b8f",
+  "ace_source_license": {
+    "repo": "https://github.com/ace-step/ACE-Step-1.5",
+    "revision": "ca1e85fe9430179831e6bc6be790c332190a3866",
+    "source_path": "LICENSE",
+    "local_file": "ACE-Step-1.5-MIT.txt",
+    "bytes": 1064,
+    "sha256": "05a6bce42a62636d2cfb24139cc008b6b899754e244175814bb5dd2f4a485357"
+  }
+}

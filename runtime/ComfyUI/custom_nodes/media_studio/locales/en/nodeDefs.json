@@ -1,0 +1,31 @@
+{
+  "MediaStudioSpeech": {
+    "display_name": "Local speech generation",
+    "description": "Generate speech locally with Qwen3-TTS using a preset voice, delivery instruction or reference voice. A successful generation does not mean listening review is complete.",
+    "inputs": {
+      "mode": {"name": "Generation mode", "tooltip": "preset uses a preset voice; clone uses a reference recording. Technical enum values stay unchanged."},
+      "text": {"name": "Text to speak", "tooltip": "The complete words to generate."},
+      "language": {"name": "Speech language", "tooltip": "Choose the spoken language. Auto detects it automatically."},
+      "speaker": {"name": "Preset voice", "tooltip": "Choose a preset speaking voice. Voice identifiers stay unchanged."},
+      "instruct": {"name": "Delivery instruction", "tooltip": "Describe tone, emotion or rhythm for preset voice mode. May be empty."},
+      "reference_audio_path": {"name": "Reference audio path", "tooltip": "Local recording path for voice cloning. You can also connect the reference audio input."},
+      "reference_text": {"name": "Reference transcript", "tooltip": "The exact words spoken in the reference recording."},
+      "seed": {"name": "Seed", "tooltip": "Use a fixed seed to compare generated results."},
+      "max_new_tokens": {"name": "Maximum generated tokens", "tooltip": "Limits the generation length. A low value may truncate the speech."},
+      "timeout_seconds": {"name": "Execution timeout (seconds)", "tooltip": "Stops external generation processes owned by this node when the limit is exceeded."},
+      "reference_audio": {"name": "Reference audio", "tooltip": "Connect a recording to use as the reference speaking voice."}
+    },
+    "outputs": {"0": {"name": "Audio", "tooltip": "The actual generated speech audio."}}
+  },
+  "MediaStudioMV": {
+    "display_name": "Lyric video rendering",
+    "description": "Render an existing local PV project with the original rendering engine. Technical project names stay unchanged.",
+    "inputs": {
+      "project_name": {"name": "Existing project", "tooltip": "Choose a prepared local project, such as pv-demo."},
+      "quality": {"name": "Render quality", "tooltip": "preview renders a preview; final uses full quality. Technical enum values stay unchanged."},
+      "filename_prefix": {"name": "Output filename prefix", "tooltip": "The technical filename prefix used to save the video."},
+      "timeout_seconds": {"name": "Execution timeout (seconds)", "tooltip": "Stops external rendering processes owned by this node when the limit is exceeded."}
+    },
+    "outputs": {"0": {"name": "Video", "tooltip": "The actual rendered lyric video."}}
+  }
+}

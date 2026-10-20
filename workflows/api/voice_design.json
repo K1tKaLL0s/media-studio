@@ -1,0 +1,18 @@
+{
+  "1": {
+    "class_type": "MediaStudioVoiceDesign",
+    "inputs": {
+      "text": "",
+      "instruct": "A calm adult voice, clear articulation and a gentle pace.",
+      "language": "Chinese",
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "timeout_seconds": 900
+    },
+    "_meta": {"title": "Qwen VoiceDesign - static integration, not run"}
+  },
+  "2": {
+    "class_type": "SaveAudio",
+    "inputs": {"audio": ["1", 0], "filename_prefix": "speech/voice_design"}
+  }
+}

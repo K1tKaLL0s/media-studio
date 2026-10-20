@@ -1,0 +1,4 @@
+interface:
+  display_name: "音乐创作与配乐"
+  short_description: "编写配乐结构、歌词和作曲草案，准备音乐生成简报及可检查的声音剪辑"
+  default_prompt: "请使用 $media-music 完成本次对应的创作任务，并给出可审阅产物。"

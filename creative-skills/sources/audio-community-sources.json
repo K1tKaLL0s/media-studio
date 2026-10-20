@@ -1,0 +1,677 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-10-20",
+  "scope": "read-only research for local multimedia craft skills; no GPU, installs, paid calls, C/N writes or source-thread messages",
+  "video_evidence_limits": {
+    "continuous_playback": false,
+    "independent_subtitles": false,
+    "audio_listened": false,
+    "asr_run": false,
+    "claims_are_not_runtime_tests": true
+  },
+  "videos": [
+    {
+      "bvid": "BV1TLhB6vEib",
+      "url": "https://www.bilibili.com/video/BV1TLhB6vEib/",
+      "title": "8G显存就能本地跑！Qwen-Image 2.1本地部署实测：评分反超闭源旗舰，图像编辑全免费",
+      "author": "ZZ是画渣",
+      "duration_seconds": 250,
+      "cid": 42083289948,
+      "retrieved_utc": "2026-10-20T15:58:00.755182+08:00",
+      "review_method": "public preview sprite mosaic viewed and selected timestamp frames inspected; not continuous playback",
+      "inspected_frame_seconds": [
+        20,
+        65,
+        110,
+        155,
+        205,
+        235
+      ],
+      "chapters": [],
+      "subtitle_track_obtained": false,
+      "subtitle_api_result": [],
+      "burned_in_captions_observed": true,
+      "audio_listened": false,
+      "asr_run": false,
+      "source_api_urls": [
+        "https://api.bilibili.com/x/web-interface/view?bvid=BV1TLhB6vEib",
+        "https://api.bilibili.com/x/player/wbi/v2?aid=117308710192317&cid=42083289948",
+        "https://api.bilibili.com/x/player/videoshot?bvid=BV1TLhB6vEib&index=1"
+      ],
+      "evidence_files": [
+        {
+          "bytes": 58979,
+          "sha256": "89464a38556d3bcf7844ae1aedf3a3937629f06113de7c283c2b4891d5dcc58f",
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "bytes": 210098,
+          "sha256": "692dd92f592449e53ddc82ad85995d829601776b3d66aa988d3e89b207181ba9",
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "limits": [
+        "No independent subtitle track in unauthenticated response; this does not imply absence of speech.",
+        "Frames and displayed demo labels do not establish audio quality or successful local generation."
+      ]
+    },
+    {
+      "bvid": "BV1CcuH6sESW",
+      "url": "https://www.bilibili.com/video/BV1CcuH6sESW/",
+      "title": "Comfyui本地部署教程（一） 使用Anima模型生成二次元美图",
+      "author": "等我去洗个澡",
+      "duration_seconds": 195,
+      "cid": 40690122835,
+      "retrieved_utc": "2026-10-20T15:58:00.71728+08:00",
+      "review_method": "public preview sprite mosaic viewed and selected timestamp frames inspected; not continuous playback",
+      "inspected_frame_seconds": [
+        12,
+        77,
+        102,
+        160,
+        185
+      ],
+      "chapters": [
+        {
+          "from": 0,
+          "to": 12,
+          "label": "教程目标与工具介绍"
+        },
+        {
+          "from": 12,
+          "to": 77,
+          "label": "ComfyUI安装与模型下载"
+        },
+        {
+          "from": 77,
+          "to": 106,
+          "label": "创建基础工作流节点"
+        },
+        {
+          "from": 106,
+          "to": 164,
+          "label": "配置采样与连接预览"
+        },
+        {
+          "from": 164,
+          "to": 194,
+          "label": "提示词编写与运行生成"
+        }
+      ],
+      "subtitle_track_obtained": false,
+      "subtitle_api_result": [],
+      "burned_in_captions_observed": true,
+      "audio_listened": false,
+      "asr_run": false,
+      "source_api_urls": [
+        "https://api.bilibili.com/x/web-interface/view?bvid=BV1CcuH6sESW",
+        "https://api.bilibili.com/x/player/wbi/v2?aid=117049435230548&cid=40690122835",
+        "https://api.bilibili.com/x/player/videoshot?bvid=BV1CcuH6sESW&index=1"
+      ],
+      "evidence_files": [
+        {
+          "bytes": 34629,
+          "sha256": "1e6e3c72a02f338010a1fcca41c844a1347d0af58f29237368c0dc2b4952b476",
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "bytes": 126048,
+          "sha256": "54cbe726b22dceda5fbd698adacb56270e1bf7c765df496dfe864b54dcf7091d",
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "limits": [
+        "No independent subtitle track in unauthenticated response; this does not imply absence of speech.",
+        "Frames and displayed demo labels do not establish audio quality or successful local generation."
+      ]
+    },
+    {
+      "bvid": "BV1d8pU6xEZX",
+      "url": "https://www.bilibili.com/video/BV1d8pU6xEZX/",
+      "title": "【DSH】让deepseek harness可以刷b站的插件，看到有意思的还会分享给你",
+      "author": "凌羽clover",
+      "duration_seconds": 157,
+      "cid": 42748546101,
+      "retrieved_utc": "2026-10-20T15:58:00.772128+08:00",
+      "review_method": "public preview sprite mosaic viewed and selected timestamp frames inspected; not continuous playback",
+      "inspected_frame_seconds": [
+        20,
+        57,
+        95,
+        135,
+        155
+      ],
+      "chapters": [
+        {
+          "from": 0,
+          "to": 20,
+          "label": "插件：B站刷评"
+        },
+        {
+          "from": 20,
+          "to": 60,
+          "label": "部署：安装登录"
+        },
+        {
+          "from": 60,
+          "to": 98,
+          "label": "配置：自动刷评"
+        },
+        {
+          "from": 98,
+          "to": 138,
+          "label": "配置：转写定制"
+        },
+        {
+          "from": 138,
+          "to": 156,
+          "label": "示例：效果反馈"
+        }
+      ],
+      "subtitle_track_obtained": false,
+      "subtitle_api_result": [],
+      "burned_in_captions_observed": true,
+      "audio_listened": false,
+      "asr_run": false,
+      "source_api_urls": [
+        "https://api.bilibili.com/x/web-interface/view?bvid=BV1d8pU6xEZX",
+        "https://api.bilibili.com/x/player/wbi/v2?aid=117441451525192&cid=42748546101",
+        "https://api.bilibili.com/x/player/videoshot?bvid=BV1d8pU6xEZX&index=1"
+      ],
+      "evidence_files": [
+        {
+          "bytes": 10104,
+          "sha256": "439a9378ac56b6078c6bf5a63a7d0fd803503e4eabbdab5e73df01d94e0f55a9",
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "bytes": 164119,
+          "sha256": "d1f21044b19f401f93f013a91725e51087c6b3dcbe239216689e5fae3d3f6dd9",
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "limits": [
+        "No independent subtitle track in unauthenticated response; this does not imply absence of speech.",
+        "Frames and displayed demo labels do not establish audio quality or successful local generation."
+      ]
+    },
+    {
+      "bvid": "BV1yPz6BJEwX",
+      "url": "https://www.bilibili.com/video/BV1yPz6BJEwX/",
+      "title": "详解 & 实测开源TTS天花板Qwen3-TTS ：5个模型 + 10种语言 + 3秒音色克隆（含 Mac部署）",
+      "author": "kate人不错",
+      "duration_seconds": 729,
+      "cid": 35575498279,
+      "retrieved_utc": "2026-10-20T15:58:01.126102+08:00",
+      "review_method": "public preview sprite mosaic viewed and selected timestamp frames inspected; not continuous playback",
+      "inspected_frame_seconds": [
+        40,
+        174,
+        208,
+        255,
+        290,
+        434,
+        451,
+        480,
+        527,
+        573,
+        631,
+        689
+      ],
+      "chapters": [
+        {
+          "from": 0,
+          "to": 37,
+          "label": "Qwen3-TTS 开源亮点总览"
+        },
+        {
+          "from": 37,
+          "to": 70,
+          "label": "模型谱系"
+        },
+        {
+          "from": 70,
+          "to": 172,
+          "label": "性能与对比"
+        },
+        {
+          "from": 172,
+          "to": 289,
+          "label": "用自然语言\"控声音\""
+        },
+        {
+          "from": 289,
+          "to": 354,
+          "label": "如何上手"
+        },
+        {
+          "from": 354,
+          "to": 432,
+          "label": "Mac 部署 "
+        },
+        {
+          "from": 432,
+          "to": 729,
+          "label": "Demo效果展示"
+        }
+      ],
+      "subtitle_track_obtained": false,
+      "subtitle_api_result": [],
+      "burned_in_captions_observed": true,
+      "audio_listened": false,
+      "asr_run": false,
+      "source_api_urls": [
+        "https://api.bilibili.com/x/web-interface/view?bvid=BV1yPz6BJEwX",
+        "https://api.bilibili.com/x/player/wbi/v2?aid=115947423663760&cid=35575498279",
+        "https://api.bilibili.com/x/player/videoshot?bvid=BV1yPz6BJEwX&index=1"
+      ],
+      "evidence_files": [
+        {
+          "bytes": 14745,
+          "sha256": "8b758922b21cbe4d4998647441c6b862b9e369ac9a4819349757aae397b32ddb",
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "bytes": 261657,
+          "sha256": "cb064e93f4e336e785205fd842f031307c05e15735e054e163e35cbbb78438ac",
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "limits": [
+        "No independent subtitle track in unauthenticated response; this does not imply absence of speech.",
+        "Frames and displayed demo labels do not establish audio quality or successful local generation."
+      ]
+    },
+    {
+      "bvid": "BV1qj96BGEyQ",
+      "url": "https://www.bilibili.com/video/BV1qj96BGEyQ/",
+      "title": "最强免费生成音乐，ACE-Step-V1.5-XL，免费版Suno，商业级别音乐效果，最低8G显存可用！",
+      "author": "与AI同行1996",
+      "duration_seconds": 486,
+      "cid": 37909495936,
+      "retrieved_utc": "2026-10-20T15:58:01.265765+08:00",
+      "review_method": "public preview sprite mosaic viewed and selected timestamp frames inspected; not continuous playback",
+      "inspected_frame_seconds": [
+        25,
+        90,
+        150,
+        205,
+        265,
+        315,
+        365,
+        415,
+        450,
+        480
+      ],
+      "chapters": [],
+      "subtitle_track_obtained": false,
+      "subtitle_api_result": [],
+      "burned_in_captions_observed": true,
+      "audio_listened": false,
+      "asr_run": false,
+      "source_api_urls": [
+        "https://api.bilibili.com/x/web-interface/view?bvid=BV1qj96BGEyQ",
+        "https://api.bilibili.com/x/player/wbi/v2?aid=116481425741851&cid=37909495936",
+        "https://api.bilibili.com/x/player/videoshot?bvid=BV1qj96BGEyQ&index=1"
+      ],
+      "evidence_files": [
+        {
+          "bytes": 14699,
+          "sha256": "a0fcd7dc7bc1e4cfba9f7deb78b05f2f83689e10569537adf7be09435474184d",
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "bytes": 162274,
+          "sha256": "277fe180a58ceef3dc3651fb4cc863b35f6a32e2ba015dadf00f360d50844517",
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "limits": [
+        "No independent subtitle track in unauthenticated response; this does not imply absence of speech.",
+        "Frames and displayed demo labels do not establish audio quality or successful local generation."
+      ]
+    }
+  ],
+  "community_and_engine_sources": [
+    {
+      "repo": "ace-step/ACE-Step-1.5",
+      "commit": "ca1e85fe9430179831e6bc6be790c332190a3866",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/ace-step/ACE-Step-1.5/blob/ca1e85fe9430179831e6bc6be790c332190a3866/LICENSE",
+          "sha256": "05a6bce42a62636d2cfb24139cc008b6b899754e244175814bb5dd2f4a485357",
+          "bytes": 1064,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/ace-step/ACE-Step-1.5/blob/ca1e85fe9430179831e6bc6be790c332190a3866/README.md",
+          "sha256": "650c6ef98b70289886669895c4fd68aab3cc45bba74b3525d728a45a85cbcd66",
+          "bytes": 20439,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "package.json",
+          "url": "https://github.com/ace-step/ACE-Step-1.5/blob/ca1e85fe9430179831e6bc6be790c332190a3866/package.json",
+          "sha256": "67a7e58d3ad12986e842d99e6d1d00eef96f6c307ad1faf76a422a673471d762",
+          "bytes": 317,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "docs/en/Tutorial.md",
+          "url": "https://github.com/ace-step/ACE-Step-1.5/blob/ca1e85fe9430179831e6bc6be790c332190a3866/docs/en/Tutorial.md",
+          "sha256": "79ff45ae2040fe9205affdb23700214e6c1228b278ce9034b23485af3b992485",
+          "bytes": 48790,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "docs/en/INFERENCE.md",
+          "url": "https://github.com/ace-step/ACE-Step-1.5/blob/ca1e85fe9430179831e6bc6be790c332190a3866/docs/en/INFERENCE.md",
+          "sha256": "fc76c3deb3346d57b09c9ecdb71217aee0de7ba0f22f71db89a9fb0905f955ba",
+          "bytes": 40049,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "disposition": "candidate_engine_reference_only",
+      "license_verdict": "MIT",
+      "reuse_notes": "Actual tutorial sections 316-335/397-430/654-744 and inference quickstart inspected; no installation or local music endpoint.",
+      "executed": false,
+      "installed": false
+    },
+    {
+      "repo": "adriendidoudid/eleven-sk",
+      "commit": "55a1662ff038fc0c21691cb6e673c5a48d36423f",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/adriendidoudid/eleven-sk/blob/55a1662ff038fc0c21691cb6e673c5a48d36423f/LICENSE",
+          "sha256": "3a70e38d95d7052d3232c63d13231e2fb17345e46c50a0f7509c58fd5b6d3dfd",
+          "bytes": 1069,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "skills/elevenlabs/SKILL.md",
+          "url": "https://github.com/adriendidoudid/eleven-sk/blob/55a1662ff038fc0c21691cb6e673c5a48d36423f/skills/elevenlabs/SKILL.md",
+          "sha256": "aaa222dc4ba589ae9203690ec33d1cb1dc3a47590213ea02011ddc9d25e8cce4",
+          "bytes": 13064,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "skills/elevenlabs/references/music.md",
+          "url": "https://github.com/adriendidoudid/eleven-sk/blob/55a1662ff038fc0c21691cb6e673c5a48d36423f/skills/elevenlabs/references/music.md",
+          "sha256": "d6f8d06baf27eb6e4e1272eb30f5d63091f4cea869708b471179c383d473dc39",
+          "bytes": 7755,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "skills/elevenlabs/references/speech.md",
+          "url": "https://github.com/adriendidoudid/eleven-sk/blob/55a1662ff038fc0c21691cb6e673c5a48d36423f/skills/elevenlabs/references/speech.md",
+          "sha256": "383d9a6e1ebc04b78489911ce2776dc361533de01e38945e7b78a7666a42ba3d",
+          "bytes": 10127,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "skills/elevenlabs/references/voices.md",
+          "url": "https://github.com/adriendidoudid/eleven-sk/blob/55a1662ff038fc0c21691cb6e673c5a48d36423f/skills/elevenlabs/references/voices.md",
+          "sha256": "e83fe8678fd19e8ce296b9c1ec08ae49ad52c9f9663024283a86f5490d6e296f",
+          "bytes": 11577,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "disposition": "suitable_selective_methods",
+      "license_verdict": "MIT",
+      "reuse_notes": "Progressive refs for music/speech/voices, candidate selection, error response handling; model/pricing claims and broad consent text require primary verification.",
+      "executed": false,
+      "installed": false
+    },
+    {
+      "repo": "c1overzz/dsh-bili-scroll",
+      "commit": "94a033634ecc2618400937274bd61d5305c5b0f0",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/c1overzz/dsh-bili-scroll/blob/94a033634ecc2618400937274bd61d5305c5b0f0/LICENSE",
+          "sha256": "9b935019d62b1f2548caecc540ebe0bb3c04636626cdd63b40eef725c5e633fa",
+          "bytes": 1064,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/c1overzz/dsh-bili-scroll/blob/94a033634ecc2618400937274bd61d5305c5b0f0/README.md",
+          "sha256": "84555f1dec6641a3398456033301fb20ca2b0a1bc599b3ff5db7ff7e0535f1cc",
+          "bytes": 13918,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "package.json",
+          "url": "https://github.com/c1overzz/dsh-bili-scroll/blob/94a033634ecc2618400937274bd61d5305c5b0f0/package.json",
+          "sha256": "dedf433cce4186b182eeffc1eeff822e6ff68c140715bf73793798d6ae84f540",
+          "bytes": 1716,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "prompts/duty.md",
+          "url": "https://github.com/c1overzz/dsh-bili-scroll/blob/94a033634ecc2618400937274bd61d5305c5b0f0/prompts/duty.md",
+          "sha256": "3654aa3a28a1f36078e5ea4d1ef63baeb79dff509255fd0db1f11c46b5da8930",
+          "bytes": 15941,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "cordis.patch.yml",
+          "url": "https://github.com/c1overzz/dsh-bili-scroll/blob/94a033634ecc2618400937274bd61d5305c5b0f0/cordis.patch.yml",
+          "sha256": "2bf159f963c83baaa62565a84198ec9d4fbc2010818fdb8aa876c6496564d5b6",
+          "bytes": 1081,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "NOTICE.md",
+          "url": "https://github.com/c1overzz/dsh-bili-scroll/blob/94a033634ecc2618400937274bd61d5305c5b0f0/NOTICE.md",
+          "sha256": "f45aec9e15474835d314db2fe343985ecc75aa1f8731b655a4850e7718ca5ba8",
+          "bytes": 634,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "vendor/bilibili-mcp/LICENSE",
+          "url": "https://github.com/c1overzz/dsh-bili-scroll/blob/94a033634ecc2618400937274bd61d5305c5b0f0/vendor/bilibili-mcp/LICENSE",
+          "sha256": "613dc22ea40922528e661ff5112c207a87c5fd323b8f24202b06e69317cc888e",
+          "bytes": 1067,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "index.js",
+          "url": "https://github.com/c1overzz/dsh-bili-scroll/blob/94a033634ecc2618400937274bd61d5305c5b0f0/index.js",
+          "sha256": "bf84d52d30fd885e15c063057f373e38e54246c82f8b58c102cd6f3535e77cc4",
+          "bytes": 103327,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "disposition": "suitable_selective_plugin_patterns",
+      "license_verdict": "MIT with separately retained vendored MIT notice",
+      "reuse_notes": "Read-only tool whitelist verified index.js 929-936; reject empty transcript equals no speech, unrelated private memory scan, Defender exclusion advice and automatic social actions.",
+      "executed": false,
+      "installed": false
+    },
+    {
+      "repo": "elevenlabs/skills",
+      "commit": "269e5f0e5a4cf296a8a38beb166245b89d5e2c1c",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/elevenlabs/skills/blob/269e5f0e5a4cf296a8a38beb166245b89d5e2c1c/LICENSE",
+          "sha256": "4ab5e9af2296f748eefa6c0696667f83aa9c0edda7b6972785966b60644b3da6",
+          "bytes": 1067,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "music/SKILL.md",
+          "url": "https://github.com/elevenlabs/skills/blob/269e5f0e5a4cf296a8a38beb166245b89d5e2c1c/music/SKILL.md",
+          "sha256": "9aa83356f505da832d32171e2349d29da043bb895d09baba1adb67ce1697324a",
+          "bytes": 13938,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "music/references/api_reference.md",
+          "url": "https://github.com/elevenlabs/skills/blob/269e5f0e5a4cf296a8a38beb166245b89d5e2c1c/music/references/api_reference.md",
+          "sha256": "fd913eb337ca12c456236f26c5d5d046c3bcb7d9c9feb8075c5f9699106fb57a",
+          "bytes": 18120,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "text-to-speech/SKILL.md",
+          "url": "https://github.com/elevenlabs/skills/blob/269e5f0e5a4cf296a8a38beb166245b89d5e2c1c/text-to-speech/SKILL.md",
+          "sha256": "fcc105566df403f5f77c25e73b63d9eef170f7326aaea6a8bbb977386ff56abe",
+          "bytes": 10727,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "disposition": "suitable_selective_methods",
+      "license_verdict": "MIT",
+      "reuse_notes": "Prompt versus sectional composition plan, output metadata and local regeneration; do not copy account onboarding or run paid provider automatically.",
+      "executed": false,
+      "installed": false
+    },
+    {
+      "repo": "QwenLM/Qwen3-TTS",
+      "commit": "022e286b98fbec7e1e916cb940cdf532cd9f488e",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/README.md",
+          "sha256": "51f4497e70e9ae024b10ee4bbcb470366f10592edeab56c58d2194ba2dadb745",
+          "bytes": 60501,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/LICENSE",
+          "sha256": "a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655",
+          "bytes": 11343,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "disposition": "existing_engine_primary_reference",
+      "license_verdict": "Apache-2.0",
+      "reuse_notes": "README model table and APIs inspected; current local worker supports narrower preset and clone contract, not VoiceDesign or singing.",
+      "executed": false,
+      "installed": false
+    },
+    {
+      "repo": "remotion-dev/skills",
+      "commit": "039e8a2fc78b67efc228d5645367838b85818a1c",
+      "license": null,
+      "files": [
+        {
+          "path": "skills/remotion-best-practices/remotion-markup/audio.md",
+          "url": "https://github.com/remotion-dev/skills/blob/039e8a2fc78b67efc228d5645367838b85818a1c/skills/remotion-best-practices/remotion-markup/audio.md",
+          "sha256": "857bf47188c6de8936f51e862f670da7e1cafa38aea8e1ae4a4920789f224077",
+          "bytes": 4121,
+          "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+        }
+      ],
+      "disposition": "do_not_copy_unclear_license",
+      "license_verdict": null,
+      "reuse_notes": "Actual audio.md inspected; root license not found in fixed commit tree/API metadata. Product runtime license cannot be assumed to license this skill text.",
+      "executed": false,
+      "installed": false
+    }
+  ],
+  "official_web_docs": [
+    {
+      "url": "https://elevenlabs.io/docs/eleven-creative/voices/voice-design",
+      "authority": "official ElevenLabs",
+      "inspected": "voice description factors, matched preview text, candidate selection",
+      "limit": "Cloud service; not configured locally; no API called."
+    },
+    {
+      "url": "https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/professional-voice-cloning",
+      "authority": "official ElevenLabs",
+      "inspected": "spoken-only training, single clean speaker, own-voice verification, model/provider-specific restrictions",
+      "limit": "Not a universal restriction or general legal conclusion."
+    },
+    {
+      "url": "https://elevenlabs.io/docs/help-center/product/voices/voice-cloning/can-i-create-a-professional-voice-clone-of-someone-elses-voice",
+      "authority": "official ElevenLabs",
+      "inspected": "PVC cannot clone another person even with consent; owner can verify and privately share",
+      "limit": "Applies specifically to provider PVC."
+    },
+    {
+      "url": "https://ffmpeg.org/ffmpeg-filters.html#atrim",
+      "authority": "official FFmpeg",
+      "inspected": "trimming leaves timestamps unchanged; reset only as timeline requires"
+    },
+    {
+      "url": "https://ffmpeg.org/ffmpeg-filters.html#acrossfade",
+      "authority": "official FFmpeg",
+      "inspected": "duration, overlap and fade curves; output duration needs verification"
+    },
+    {
+      "url": "https://ffmpeg.org/ffmpeg-filters.html#loudnorm",
+      "authority": "official FFmpeg",
+      "inspected": "integrated loudness/LRA/true peak, one/two pass, resampling considerations"
+    }
+  ],
+  "existing_local_routing_sources": [
+    {
+      "bytes": 3304,
+      "sha256": "dd1b5029650090aaebf9c5274ea2e59aba1cdfeb8871cef28124ef561495f5b8",
+      "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+    },
+    {
+      "bytes": 19516,
+      "sha256": "706d4d96e1d5c9e6023fe3ccabba1bb34b364024d344fd25b8515ec7d28fe3c4",
+      "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+    },
+    {
+      "bytes": 5026,
+      "sha256": "056d2f32c7d27639c3cf861981d7331cab8e7723ded1ae1966de6efd8ce01b7c",
+      "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+    },
+    {
+      "bytes": 3424,
+      "sha256": "94dd3f25d655b3308046d5764c09d5715c781d01acfd3c3c4afd247801134b89",
+      "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+    }
+  ],
+  "research_file": {
+    "bytes": 17678,
+    "sha256": "e52ae258debe6f9081c6b8871348cdc7edfb955c2f056244951fc57aec29e8de",
+    "local_evidence_note": "Local research or host snapshot retained by the original author; not distributed with this repository. Public URLs and available content hashes are retained."
+  },
+  "distribution_note": "This file contains public source metadata and research observations. Original local research artifacts, source-page caches, preview frames, host state and private media are not distributed."
+}

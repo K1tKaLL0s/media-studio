@@ -1,0 +1,4 @@
+interface:
+  display_name: "写实视觉方向"
+  short_description: "制定写实构图、光线、空间和材质规则，用实际画面证据提出具体返工"
+  default_prompt: "请使用 $media-look-realism 完成本次对应的创作任务，并给出可审阅产物。"

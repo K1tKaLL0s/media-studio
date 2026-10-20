@@ -1,0 +1,4 @@
+interface:
+  display_name: "声音创作与导演"
+  short_description: "设计说话音色、表演和配音稿，准备本人授权克隆材料并检查真实音频"
+  default_prompt: "请使用 $media-voice 完成本次对应的创作任务，并给出可审阅产物。"
